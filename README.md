@@ -1,5 +1,5 @@
 # Archipelagic climate indicator dashboard
-This repository includes data files to create the dashboard for climate indicators for the Hawaii Archipelago. Codes and data sources to generate these indicators are not included here. Addtional information regarding these climate indicators can be found in the Archipelagic Annual SAFE reports.
+This repository includes data files to create the dashboard for selected climate indicators for the Hawaii Archipelago. Codes and data sources to generate these indicators are not included here. Addtional information can be found in the Archipelagic Annual SAFE reports.
 
 
 
