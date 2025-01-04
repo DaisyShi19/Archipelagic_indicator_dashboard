@@ -1,0 +1,100 @@
+---
+title: "Chl_description"
+author: "hui.shi@noaa.gov"
+date: "2024-01-03"
+output: md_document
+preserve_yaml: FALSE
+---
+
+```{r}
+#| include: false
+### Load libraries
+library(tidyverse)
+library(lubridate)
+library(here)
+library(stringr)
+library(markdown)
+```
+
+```{r}
+#| include: false
+# Set report year (RptYr), to make things easier
+RptYr <- 2023
+
+# Identify the variable we're focused on
+var <- 'Chl'
+```
+
+```{r, include = FALSE, global = TRUE}
+# Access indicator data
+indicator_data <- read_csv(here('Indicator_Dashboard', 'Data', paste('Dashboard_Data_', RptYr, '.csv', sep = "")))
+
+# And just use our variable of interest
+indicator_data <- indicator_data |> filter(ID == var)
+```
+
+```{r, include = FALSE}
+# Values that are included in the text
+
+# Annual mean for report year
+ann_mean_RptYr <- indicator_data |> filter(Year == RptYr) |>
+  summarise(Value = mean(Value, na.rm = TRUE))
+
+# Increase over time from linear model
+if (!is.na(indicator_data$Value_lm[1])) {
+  delta_Chl_lm <- indicator_data$Value_lm[length(indicator_data$Value_lm)] - 
+    indicator_data$Value_lm[1]
+}
+
+# Increase in anomaly over time from linear model
+if (!is.na(indicator_data$Anom_lm[1])) {
+  delta_Chl_anom_lm <- indicator_data$Anom_lm[length(indicator_data$Anom_lm)] - 
+    indicator_data$Anom_lm[1]
+}
+
+# Monthly min & max for report year
+monthly_min_RptYr <- indicator_data |> filter(Year == RptYr) |>
+  summarise(Value = min(Value, na.rm = TRUE))
+monthly_max_RptYr <- indicator_data |> filter(Year == RptYr) |>
+  summarise(Value = max(Value, na.rm = TRUE))
+
+# Monthly min & max for previous years
+monthly_min_PrevYrs <- indicator_data |> filter(Year < RptYr) |>
+  summarise(Value = min(Value, na.rm = TRUE))
+monthly_max_PrevYrs <- indicator_data |> filter(Year < RptYr) |>
+  summarise(Value = max(Value, na.rm = TRUE))
+
+# long-term trend
+time=1:length(indicator_data$Value)
+m1=lm(indicator_data$Value~time)
+trend <- coef(m1)[2] *12
+```
+
+## Ocean Color
+__About the Indicator__  
+Ocean color measures chlorophyll-a concentration near the ocean's surface, which provides information on phytoplankton abundance. Chlorophyll-a is one of the most directly observable measures we have for tracking increasing ocean productivity.
+
+__Status of the Indicator__  
+Annual mean chlorophyll concentration was `r signif(ann_mean_RptYr, 2)` mg chl m^-^^3^ in `r RptYr`. Monthly mean chlorophyll concentrations ranged from `r signif(monthly_min_RptYr, 2)`–`r signif(monthly_max_RptYr, 2)` mg chl m^-^^3^, which was within the range of values observed during the previous years of the time series (`r signif(monthly_min_PrevYrs, 2)`–`r signif(monthly_max_PrevYrs, 2)` mg chl m^-^^3^). Over the period of record, annual Chl-A has shown weak but significant linear decrease at a rate of `r abs(signif(trend, 3))` mg chl m^-^^3^ yr^-^^1^, and chlorophyll anomalies have declined by `r abs(signif(delta_Chl_anom_lm, 1))` mg chl m^-^^3^.  Chlorophyll concentrations were overall lower than average across the Main Hawaiian Islands.
+
+__Indicator Data__  
+Description: Chlorophyll-a concentration from 1998-2023, derived from the European Space Agency (ESA) Climate Change Initiative (CCI) dataset, v6.0 (Sathyendranath et al. 2018). A monthly climatology was generated across the entire period to provide an anomaly time series. An annual anomaly was generated in reference to the 1998-2009 climatology to provide a 2023 spatial anomaly.
+
+ESA Ocean Color Climate Change Initiative dataset is a merged dataset, combining data from SeaWIFS, MODIS-Aqua, MERIS, and VIIRS to provide a homogeneous time-series of ocean color. Data was accessed from the OceanWatch Central Pacific portal.
+
+Timeframe: Monthly
+
+Region/Location: Main Hawaiian Island Grid (18.5° – 22.5°N, 161° – 154°W).
+
+Measurement Platform: Satellite
+
+Data available at: <https://oceanwatch.pifsc.noaa.gov/erddap/griddap/esa-cci-chla-monthly-v6-0>, <https://oceanwatch.pifsc.noaa.gov/erddap/griddap/esa-cci-chla-1998-2009-clim-v6-0>, and <https://oceanwatch.pifsc.noaa.gov/erddap/griddap/esa-cci-chla-2023-clim_v6-0>.  
+
+Sourced from: NOAA OceanWatch (2024b) and Sathyendranath et al. (2018). Graphics produced in part using Stawitz (2023).  
+
+__References__  
+NOAA OceanWatch (2024b): <https://oceanwatch.pifsc.noaa.gov/erddap/griddap/esa-cci-chla-monthly-v6-0> Accessed: 4 April 2024 & 3 May 2024.  
+
+Sathyendranath et al. (2018): Sathyendranath S, Grant M, Brewin R.J.W, Brockmann C, Brotas V, Chuprin A, Doerffer R, Dowell M, Farman A, Groom S, Jackson T, Krasemann H, Lavender S, Martinez Vicente V, Mazeran C, Mélin F, Moore TS, Müller D, Platt T, Regner P, Roy S, Steinmetz F, Swinton J, Valente A, Zühlke M, Antoine D, Arnone R, Balch W.M, Barker K, Barlow R, Bélanger S, Berthon J-F, Beşiktepe Ş, Brando VE, Canuti E, Chavez F, Claustre H, Crout R, Feldman G, Franz B, Frouin R, García-Soto C, Gibb SW, Gould R, Hooker S, Kahru M, Klein H, Kratzer S, Loisel H, McKee D, Mitchell BG, Moisan T, Muller-Karger F, O'Dowd L, Ondrusek M, Poulton AJ, Repecaud M, Smyth T, Sosik H.M, Taberner M, Twardowski M, Voss K, Werdell J, Wernand M, Zibordi G. (2018): ESA Ocean Colour Climate Change Initiative (Ocean_Colour_cci): Version 3.1 Data. Centre for Environmental Data Analysis 04 July 2018. doi:10.5285/9c334fbe6d424a708cf3c4cf0c6a53f5. <http://dx.doi.org/10.5285/9c334fbe6d424a708cf3c4cf0c6a53f5>  
+
+Stawitz C (2023): nmfspalette: A Color Palette for NOAA Fisheries. R package version 3.0.0.000. <https://nmfs-fish-tools.github.io/nmfspalette/> 
