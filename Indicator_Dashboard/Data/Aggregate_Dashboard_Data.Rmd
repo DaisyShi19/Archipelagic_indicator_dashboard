@@ -1,0 +1,47 @@
+---
+title: "Aggregate_Dashboard_Data"
+authors: "Phoebe.Woodworth-Jefcoats@noaa.gov, hui.shi@noaa.gov"
+date: "2024-12-27"
+output: html_document
+---
+
+### Purpose
+This script aggregates the dashboard data from individual variables in to a single 
+file that the the dashboard uses for plotting.
+
+```{r}
+#| include: false
+### Load libraries
+library(tidyverse)
+library(here)
+```
+
+```{r}
+#| include: false
+# Set report year (RptYr), to make things easier
+RptYr <- 2023
+```
+
+```{r}
+#| include: false
+# Load files
+all <- read_csv(here('Indicator_Dashboard', 'Data', paste('all_Dashboard_Data_', RptYr, '.csv', sep = "")))
+Global<- all[all$ID == c("CO2", "pH", "ENSO", "PDO"),]
+#CO2 <- read_csv(here('Indicator_Dashboard', 'Data', paste('CO2_Dashboard_Data_', RptYr, '.csv', sep = "")))
+#pH <- read_csv(here('Indicator_Dashboard', 'Data', paste('pH_Dashboard_Data_', RptYr, '.csv', sep = "")))
+#ENSO <- read_csv(here('Indicator_Dashboard', 'Data', paste('ENSO_Dashboard_Data_', RptYr, '.csv', sep = "")))
+#PDO <- read_csv(here('Indicator_Dashboard', 'Data', paste('PDO_Dashboard_Data_', RptYr, '.csv', sep = "")))
+#TatD <- read_csv(here('Indicator_Dashboard', 'Data', paste('TatD_Dashboard_Data_', RptYr, '.csv', sep = "")))
+SST <- read_csv(here('Indicator_Dashboard', 'Data', paste('sst_dashboard-MH_', RptYr, '.csv', sep = ""))) 
+Chl <- read_csv(here('Indicator_Dashboard','Data', paste('chl_dashboard-MH_', RptYr, '.csv', sep = "")))
+Rain <- read_csv(here('Indicator_Dashboard','Data', paste('rain_dashboard-MH_', RptYr, '.csv', sep = "")))
+
+# Aggregate files
+Dashboard_Data <- bind_rows(Global,
+                            SST,
+                            Chl,
+                            Rain)
+
+# Save file
+write_csv(Dashboard_Data, file = here("Indicator_Dashboard", "Data", paste('Dashboard_Data_', RptYr, '.csv', sep = "")))
+```

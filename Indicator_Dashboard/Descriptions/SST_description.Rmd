@@ -1,0 +1,99 @@
+---
+title: "SST_description"
+author: "hui.shi@noaa.gov"
+date: "2024-01-03"
+output: md_document
+preserve_yaml: FALSE
+---
+
+```{r}
+#| include: false
+### Load libraries
+library(tidyverse)
+library(lubridate)
+library(here)
+library(stringr)
+library(markdown)
+```
+
+```{r}
+#| include: false
+# Set report year (RptYr), to make things easier
+RptYr <- 2023
+
+# Identify the variable we're focused on
+var <- 'SST'
+```
+
+```{r, include = FALSE, global = TRUE}
+# Access indicator data
+indicator_data <- read_csv(here('Indicator_Dashboard','Data', paste('Dashboard_Data_', RptYr, '.csv', sep = "")))
+
+# And just use our variable of interest
+indicator_data <- indicator_data |> filter(ID == var)
+```
+
+```{r, include = FALSE}
+# Values that are included in the text
+
+# Annual mean for report year
+ann_mean_RptYr <- indicator_data |> filter(Year == RptYr) |>
+  summarise(Value = mean(Value, na.rm = TRUE))
+
+# Increase over time from linear model
+if (!is.na(indicator_data$Value_lm[1])) {
+  delta_SST_lm <- indicator_data$Value_lm[length(indicator_data$Value_lm)] - 
+    indicator_data$Value_lm[1]
+}
+
+# Increase in anomaly over time from linear model
+if (!is.na(indicator_data$Anom_lm[1])) {
+  delta_SST_anom_lm <- indicator_data$Anom_lm[length(indicator_data$Anom_lm)] - 
+    indicator_data$Anom_lm[1]
+}
+
+# Monthly min & max for report year
+monthly_min_RptYr <- indicator_data |> filter(Year == RptYr) |>
+  summarise(Value = min(Value, na.rm = TRUE))
+monthly_max_RptYr <- indicator_data |> filter(Year == RptYr) |>
+  summarise(Value = max(Value, na.rm = TRUE))
+
+# Monthly min & max for previous years
+monthly_min_PrevYrs <- indicator_data |> filter(Year < RptYr) |>
+  summarise(Value = min(Value, na.rm = TRUE))
+monthly_max_PrevYrs <- indicator_data |> filter(Year < RptYr) |>
+  summarise(Value = max(Value, na.rm = TRUE))
+
+# long-term trend
+time=1:length(indicator_data$Value)
+m1=lm(indicator_data$Value~time)
+trend <- coef(m1)[2] *12
+
+```
+
+## Sea Surface Temperature
+__About the Indicator__  
+Sea surface temperature (SST) is one of the most directly observable existing measures for tracking increasing ocean temperatures. SST varies in response to natural climate cycles such as the El Niño – Southern Oscillation (ENSO). Both short-term variability and long-term trends in SST impact the marine ecosystem. Understanding
+the mechanisms through which organisms are impacted and the time scales of these impacts is an area of active research.
+
+__Status of the Indicator__  
+Annual mean SST was `r signif(ann_mean_RptYr,3)` ºC in `r RptYr`. Over the period of record, SST has increased by `r signif(delta_SST_lm, 1)` ºC and the monthly SST anomaly increased by `r signif(delta_SST_anom_lm, 1)` ºC, both at a rate of roughly `r signif(trend, 3)` ºC yr^-^^1^. Monthly SST values in `r RptYr` ranged from `r signif(monthly_min_RptYr, 3)`–`r signif(monthly_max_RptYr, 3)` ºC, within the range of temperatures experienced over the past several decades (`r signif(monthly_min_PrevYrs, 3)`–`r signif(monthly_max_PrevYrs, 3)` ºC). Overall, SST was hotter than the long-term average across most of the Main Hawaiian islands in `r RptYr`, with some intensification in the northeast part of the region.
+
+__Indicator Data__  
+Description: Satellite remotely sensed monthly sea surface temperature (SST) is averaged across the
+the Main Hawaiian Island Grid (18.5° – 22.5°N, 161° – 154°W). A time series of monthly mean SST averaged over the Main Hawaiian Island region is presented. Additionally, spatial climatology and anomalies are shown. CoralTemp data are used to calculate this indicator. 
+
+Timeframe: Monthly.
+
+Region/Location: Main Hawaiian Island Grid (18.5° – 22.5°N, 161° – 154°W).
+
+Measurement Platform: Satellite.
+
+Data available at: <https://oceanwatch.pifsc.noaa.gov/erddap/griddap/CRW_sst_v3_1_monthly>, <https://oceanwatch.pifsc.noaa.gov/erddap/griddap/CRW_sst_v3_1_1985-2009-clim>, and <https://oceanwatch.pifsc.noaa.gov/erddap/griddap/CRW_sst_v3_1_2023-clim>.   
+
+Sourced from: NOAA OceanWatch (2024a). Graphics produced in part using Stawitz (2023).
+
+__References__  
+NOAA OceanWatch (2024a): <https://oceanwatch.pifsc.noaa.gov/erddap/griddap/CRW_sst_v3_1_monthly> Accessed: 3 April 2024.
+
+Stawitz C (2023): nmfspalette: A Color Palette for NOAA Fisheries. R package version 3.0.0.000. <https://nmfs-fish-tools.github.io/nmfspalette/>
