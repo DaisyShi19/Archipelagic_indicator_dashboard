@@ -419,7 +419,7 @@ output$season_desc <- renderUI(
   } else if (input$indicator == "Chl") {
     markdown("The seasonal cycle plot shows ocean color over time by month.  The horizontal black lines are the time series average for each month.  This figure shows the annual ocean color cycle (greatest in February, least in August).")     
   } else if (input$indicator == "Rainfall") {
-    markdown("The seasonal cycle plot shows rainfall over time by month.  The horizontal black lines are the time series average for each month.  This figure shows the annual cycle for rainfall (largest in ?, smallest in ?) ")    
+    markdown("The seasonal cycle plot shows rainfall over time by month.  The horizontal black lines are the time series average for each month.  This figure shows the annual cycle for rainfall (highest in March, lowest in June) ")    
   }
 )
 
