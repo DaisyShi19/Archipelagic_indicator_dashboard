@@ -124,7 +124,7 @@ The __About the Indicator__ tab provides background information about the indica
 
 This dashboard is designed to complement the Western Pacific Regional Fishery Management Council's [data portal](https://wpcouncildata.org/archipelagicsafereport/), which includes the full suite of archipelagic Climate and Oceanic Indicators and provides access to annual data.
 
-The dashboard data match the __`r report_year`__ pelagic SAFE report.  Dashboard data will be updated each summer following publication of the SAFE report.
+The dashboard data match the __`r report_year`__ archipelagic SAFE report.  Dashboard data will be updated each summer following publication of the SAFE report.
 
 Indicators at a Glance {style="position:relative;" data-orientation=columns}
 ======================================================================
@@ -488,7 +488,7 @@ output$map <- renderPlotly({
       pal <- seagrass
       #ll_rect_color <- "white" #outline for ll fishing grounds box
       fill_scale <- scale_fill_gradientn(name = input$indicator, trans = log10_trans(),  
-                                         colors = pal, limits = c(0.01, 1), oob = squish) #log scale
+                                         colors = pal, limits = c(0.01, 0.1), oob = squish) #log scale
     }
     
     #report year map
@@ -669,7 +669,7 @@ output$anom_map <- renderPlotly({
   if (input$indicator == "Chl"){
     anom_fill_scale <- scale_fill_gradient2(name = input$indicator, low = oceans[2], 
                                             mid = "white", high = coral[2], oob = squish, 
-                                            midpoint = 0, limits = c(-0.05, 0.05))
+                                            midpoint = 0, limits = c(-0.03, 0.03))
   } else{
     anom_fill_scale <- scale_fill_gradient2(name = input$indicator, low = oceans[2], 
                                             mid = "white", high = coral[2], midpoint = 0)
