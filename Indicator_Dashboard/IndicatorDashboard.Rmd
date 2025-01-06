@@ -680,8 +680,8 @@ output$anom_map <- renderPlotly({
   #first build in ggplot
   p_anom <- ggplot() + 
     geom_raster(data = raster_anom_df, mapping = aes(x=x, y=y, fill=layer, text = labels)) +
-    geom_rect(aes(xmin = 0, xmax = 60, ymin = 15, ymax = 45), color = "black", fill = NA, linewidth = 0.5)  +
-    annotate("text", x = 30, y = 47, label = "Longline fishing grounds", size = 3.2, color = "black") +
+    #geom_rect(aes(xmin = 0, xmax = 60, ymin = 15, ymax = 45), color = "black", fill = NA, linewidth = 0.5)  +
+    #annotate("text", x = 30, y = 47, label = "Longline fishing grounds", size = 3.2, color = "black") +
     anom_fill_scale +
     geom_sf(data = land_proj, fill = "#A5A5A5", color = "#A5A5A5", linewidth = 0.5) +
     geom_sf(data = coast_proj) +
