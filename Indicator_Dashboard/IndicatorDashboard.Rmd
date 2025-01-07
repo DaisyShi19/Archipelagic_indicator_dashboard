@@ -87,6 +87,8 @@ indicator_map_data <- read_csv(here('Data', paste0('Dashboard_Map_Data_', report
 #Access map base data
 land_proj <- readRDS(here('Data', 'rnatearth_MH_land.RData'))
 coast_proj <- readRDS(here('Data', 'rnatearth_MH_coast.RData'))
+land_proj_glb <- readRDS(here('Data', 'rnatearth_glb_land.RData'))
+coast_proj_glb <- readRDS(here('Data', 'rnatearth_glb_coast.RData'))
 land_proj_enso <- readRDS(here('Data', 'rnatearth_enso_land.RData'))
 coast_proj_enso <- readRDS(here('Data', 'rnatearth_enso_coast.RData'))
 
@@ -517,7 +519,7 @@ output$map <- renderPlotly({
     
   } else{ #indicators without spatial data (CO2, pH, ENSO, PDO, Rainfall)
     
-    ext <- st_bbox(land_proj)
+    ext <- st_bbox(land_proj_glb)
     
     #make base map
     p <- ggplot() + 
@@ -535,8 +537,8 @@ output$map <- renderPlotly({
       
       #show Mauna Loa Observatory location
       p <- p +       
-        geom_sf(data = land_proj, fill = "#A5A5A5", color = "#A5A5A5", linewidth = 0.5) +
-        geom_sf(data = coast_proj, color = "black", linewidth = 0.5) +
+        geom_sf(data = land_proj_glb, fill = "#A5A5A5", color = "#A5A5A5", linewidth = 0.5) +
+        geom_sf(data = coast_proj_glb, color = "black", linewidth = 0.5) +
         coord_sf(xlim = c(ext$xmin, ext$xmax), ylim = c(ext$ymin, ext$ymax), expand = F) +
         annotate(geom = "point", x = 24.4, y = 19.5, color = crustacean[2]) +
         annotate(geom = "text", x = 33.5, y = 19.5, color = "black", size = 3.2,
@@ -558,8 +560,8 @@ output$map <- renderPlotly({
       
       #show station ALOHA location
       p <- p + 
-        geom_sf(data = land_proj, fill = "#A5A5A5", color = "#A5A5A5", linewidth = 0.5) +
-        geom_sf(data = coast_proj, color = "black", linewidth = 0.5) +
+        geom_sf(data = land_proj_glb, fill = "#A5A5A5", color = "#A5A5A5", linewidth = 0.5) +
+        geom_sf(data = coast_proj_glb, color = "black", linewidth = 0.5) +
         coord_sf(xlim = c(ext$xmin, ext$xmax), ylim = c(ext$ymin, ext$ymax), expand = F) +
         annotate(geom = "point", x = 22.0, y = 22.75, color = crustacean[2]) +
         annotate(geom = "text", x = 22.0, y = 26.5, color = "black", size = 3.2,
@@ -609,8 +611,8 @@ output$map <- renderPlotly({
         geom_rect(aes(xmin = ext$xmin, xmax = ext$xmax, ymin = 20, ymax = ext$ymax), 
                          color = crustacean[3], fill = crustacean[2], 
                          alpha = 0.5, linewidth = 0.5) +
-        geom_sf(data = land_proj, fill = "#A5A5A5", color = "#A5A5A5", linewidth = 0.5) +
-        geom_sf(data = coast_proj, color = "black", linewidth = 0.5) +
+        geom_sf(data = land_proj_glb, fill = "#A5A5A5", color = "#A5A5A5", linewidth = 0.5) +
+        geom_sf(data = coast_proj_glb, color = "black", linewidth = 0.5) +
         coord_sf(xlim = c(ext$xmin, ext$xmax), ylim = c(ext$ymin, ext$ymax), expand = F) +
         annotate("text", x = 160, y = 22, 
                  label = "PDO Region", size = 3.2, color = "black")
