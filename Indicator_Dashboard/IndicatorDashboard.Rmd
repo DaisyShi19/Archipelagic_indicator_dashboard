@@ -526,7 +526,7 @@ output$map <- renderPlotly({
       geom_rect(aes(xmin = ext$xmin, xmax = ext$xmax, ymin = -5, ymax = ext$ymax), #rectangle for coloring ocean
                 color = NA, fill = oceans[1])  +
       geom_rect(aes(xmin = 19, xmax = 26, ymin = 18.5, ymax = 22.5), color = "black", fill = NA, linewidth = 0.5) + #MHI box
-      annotate("text", x = 32.5, y = 24.5, label = "Main Hawaiian Island", size = 3.2, color = "black") +
+      annotate("text", x = 32.5, y = 24.5, label = "Main Hawaiian Island Grid", size = 3.2, color = "black") +
       geom_vline(xintercept = c(0, 60), color="black", linewidth = 0.1) + #manually add graticules (hidden by ocean rectangle)
       geom_hline(yintercept = seq(0, 60, 10), color="black", linewidth = 0.1) +
       xlab("") + ylab("") +
@@ -541,7 +541,7 @@ output$map <- renderPlotly({
         geom_sf(data = coast_proj_glb, color = "black", linewidth = 0.5) +
         coord_sf(xlim = c(ext$xmin, ext$xmax), ylim = c(ext$ymin, ext$ymax), expand = F) +
         annotate(geom = "point", x = 24.4, y = 19.5, color = crustacean[2]) +
-        annotate(geom = "text", x = 33.5, y = 19.5, color = "black", size = 3.2,
+        annotate(geom = "text", x = 33.5+1, y = 19.5-1, color = "black", size = 3.2,
                  label = "Mauna Loa\nObservatory")
       
       #port to plotly
@@ -564,7 +564,7 @@ output$map <- renderPlotly({
         geom_sf(data = coast_proj_glb, color = "black", linewidth = 0.5) +
         coord_sf(xlim = c(ext$xmin, ext$xmax), ylim = c(ext$ymin, ext$ymax), expand = F) +
         annotate(geom = "point", x = 22.0, y = 22.75, color = crustacean[2]) +
-        annotate(geom = "text", x = 22.0, y = 26.5, color = "black", size = 3.2,
+        annotate(geom = "text", x = 16.0, y = 22.75, color = "black", size = 3.2,
                  label = "Station\nALOHA")
       
       #port to plotly
