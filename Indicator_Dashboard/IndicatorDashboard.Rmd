@@ -87,8 +87,8 @@ indicator_map_data <- read_csv(here('Data', paste0('Dashboard_Map_Data_', report
 #Access map base data
 land_proj <- readRDS(here('Data', 'rnatearth_MH_land.RData'))
 coast_proj <- readRDS(here('Data', 'rnatearth_MH_coast.RData'))
-land_proj_glb <- readRDS(here('Data', 'rnatearth_glb_land.RData'))
-coast_proj_glb <- readRDS(here('Data', 'rnatearth_glb_coast.RData'))
+land_proj_glb <- readRDS(here('Data', 'rnatearth_land.RData'))
+coast_proj_glb <- readRDS(here('Data', 'rnatearth_coast.RData'))
 land_proj_enso <- readRDS(here('Data', 'rnatearth_enso_land.RData'))
 coast_proj_enso <- readRDS(here('Data', 'rnatearth_enso_coast.RData'))
 
