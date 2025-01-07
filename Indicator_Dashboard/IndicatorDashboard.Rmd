@@ -525,8 +525,8 @@ output$map <- renderPlotly({
     p <- ggplot() + 
       geom_rect(aes(xmin = ext$xmin, xmax = ext$xmax, ymin = -5, ymax = ext$ymax), #rectangle for coloring ocean
                 color = NA, fill = oceans[1])  +
-      #geom_rect(aes(xmin = 0, xmax = 60, ymin = 15, ymax = 45), color = "black", fill = NA, linewidth = 0.5) + #ll fishing grounds box
-      #annotate("text", x = 30, y = 47, label = "Longline fishing grounds", size = 3.2, color = "black") +
+      geom_rect(aes(xmin = 19, xmax = 26, ymin = 18.5, ymax = 22.5), color = "black", fill = NA, linewidth = 0.5) + #MHI box
+      annotate("text", x = 32.5, y = 24.5, label = "Main Hawaiian Island", size = 3.2, color = "black") +
       geom_vline(xintercept = c(0, 60), color="black", linewidth = 0.1) + #manually add graticules (hidden by ocean rectangle)
       geom_hline(yintercept = seq(0, 60, 10), color="black", linewidth = 0.1) +
       xlab("") + ylab("") +
