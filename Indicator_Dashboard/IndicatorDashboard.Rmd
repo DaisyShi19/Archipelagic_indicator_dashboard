@@ -564,7 +564,7 @@ output$map <- renderPlotly({
         geom_sf(data = coast_proj_glb, color = "black", linewidth = 0.5) +
         coord_sf(xlim = c(ext$xmin, ext$xmax), ylim = c(ext$ymin, ext$ymax), expand = F) +
         annotate(geom = "point", x = 22.0, y = 22.75, color = crustacean[2]) +
-        annotate(geom = "text", x = 16.0-2, y = 22.75-3, color = "black", size = 3.2,
+        annotate(geom = "text", x = 16.0-3, y = 22.75-4, color = "black", size = 3.2,
                  label = "Station\nALOHA")
       
       #port to plotly
