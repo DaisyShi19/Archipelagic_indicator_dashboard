@@ -102,7 +102,7 @@ crustacean <- nmfs_palette("crustacean")(4) # 1 = linear trend
 coral <- nmfs_palette("coral")(3) # 3 = annual average for Rpt Yr
 ann_grey <- "#D0D0D0" # annual means; in NMFS branding guide but not in package
 waves <- nmfs_palette("waves")(3) # annual means; in NMFS branding guide but not in package
-seagrass <- nmfs_palette("seagrass")(11)
+seagrass <- nmfs_palette("seagrass")(3)
 pal <- c(oceans[3], oceans[1], waves[2], coral[3], crustacean[2])
 
 ```
@@ -491,10 +491,10 @@ output$map <- renderPlotly({
       fill_scale <- scale_fill_gradientn(name = input$indicator, colors = pal)
     } else if (input$indicator == "Chl"){
       pal <- seagrass
-      colour_breaks <- c(0.01, 0.02, 0.03, 0.04,0.05,0.06,0.08,0.1, 0.2,0.5,2,20)
       #ll_rect_color <- "white" #outline for ll fishing grounds box
       fill_scale <- scale_fill_gradientn(name = input$indicator, trans = log10_trans(),  
-                                          colours = pal, values = colour_breaks, oob = squish)#,guide = FALSE) #log scale
+                                          colours = pal,  
+                                  limits = c(log10(0.01), log10(1.5)),oob = squish) #log scale
       
     }
     
