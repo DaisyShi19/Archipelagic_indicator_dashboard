@@ -619,7 +619,7 @@ output$map <- renderPlotly({
       colour_breaks <- c(0.01, 0.02, 0.03, 0.04,0.05,0.06,0.08,0.1, 0.2,0.5,2,20)
       #ll_rect_color <- "white" #outline for ll fishing grounds box
       fill_scale <- scale_fill_gradientn(name = input$indicator, trans = log10_trans(),  
-                                          colours = pal, values = colour_breaks, oob = squish,guide = FALSE) #log scale
+                                          colours = pal, values = colour_breaks, oob = squish)#,guide = FALSE) #log scale
       
     }
     
@@ -637,8 +637,10 @@ output$map <- renderPlotly({
       theme_bw() + theme(panel.grid = element_line(color="black", linewidth = 0.1),
                          legend.background = element_rect(fill='transparent'))
 
-    if (input$indicator == "SST"){
+    if (input$indicator == "Chl"){
       #plot colorbar
+      pal <- seagrass
+      colour_breaks <- c(0.01, 0.02, 0.03, 0.04,0.05,0.06,0.08,0.1, 0.2,0.5,2,20)
     bar = plot_discrete_cbar(colour_breaks, colors=pal,spacing = "constant",font_size = 4)
     
     library(ggplot2)
