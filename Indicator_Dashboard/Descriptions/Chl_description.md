@@ -15,7 +15,7 @@ m<sup>-3</sup>). Over the period of record, annual Chl-A has shown weak
 but significant linear decrease at a rate of 2.46^{-4} mg chl
 m<sup>-3</sup> yr<sup>-1</sup>, and chlorophyll anomalies have declined
 by 0.007 mg chl m<sup>-3</sup>. Chlorophyll concentrations were overall
-lower than average across the Main Hawaiian Islands.
+near average across the Main Hawaiian Islands.
 
 **Indicator Data**  
 Description: Chlorophyll-a concentration from 1998-2023, derived from
@@ -51,20 +51,20 @@ NOAA OceanWatch (2024b):
 <https://oceanwatch.pifsc.noaa.gov/erddap/griddap/esa-cci-chla-monthly-v6-0>
 Accessed: 4 April 2024 & 3 May 2024.
 
-Sathyendranath et al. (2018): Sathyendranath et al. (2018) =
-Sathyendranath S, Grant M, Brewin R.J.W, Brockmann C, Brotas V, Chuprin
-A, Doerffer R, Dowell M, Farman A, Groom S, Jackson T, Krasemann H,
-Lavender S, Martinez Vicente V, Mazeran C, Mélin F, Moore TS, Müller D,
-Platt T, Regner P, Roy S, Steinmetz F, Swinton J, Valente A, Zühlke M,
-Antoine D, Arnone R, Balch W.M, Barker K, Barlow R, Bélanger S, Berthon
-J-F, Beşiktepe Ş, Brando VE, Canuti E, Chavez F, Claustre H, Crout R,
-Feldman G, Franz B, Frouin R, García-Soto C, Gibb SW, Gould R, Hooker S,
-Kahru M, Klein H, Kratzer S, Loisel H, McKee D, Mitchell BG, Moisan T,
-Muller-Karger F, O’Dowd L, Ondrusek M, Poulton AJ, Repecaud M, Smyth T,
-Sosik H.M, Taberner M, Twardowski M, Voss K, Werdell J, Wernand M,
-Zibordi G. (2018): ESA Ocean Colour Climate Change Initiative
-(Ocean\_Colour\_cci): Version 3.1 Data. Centre for Environmental Data
-Analysis 04 July 2018. <doi:10.5285/9c334fbe6d424a708cf3c4cf0c6a53f5>.
+Sathyendranath et al. (2018): Sathyendranath S, Grant M, Brewin R.J.W,
+Brockmann C, Brotas V, Chuprin A, Doerffer R, Dowell M, Farman A, Groom
+S, Jackson T, Krasemann H, Lavender S, Martinez Vicente V, Mazeran C,
+Mélin F, Moore TS, Müller D, Platt T, Regner P, Roy S, Steinmetz F,
+Swinton J, Valente A, Zühlke M, Antoine D, Arnone R, Balch W.M, Barker
+K, Barlow R, Bélanger S, Berthon J-F, Beşiktepe Ş, Brando VE, Canuti E,
+Chavez F, Claustre H, Crout R, Feldman G, Franz B, Frouin R, García-Soto
+C, Gibb SW, Gould R, Hooker S, Kahru M, Klein H, Kratzer S, Loisel H,
+McKee D, Mitchell BG, Moisan T, Muller-Karger F, O’Dowd L, Ondrusek M,
+Poulton AJ, Repecaud M, Smyth T, Sosik H.M, Taberner M, Twardowski M,
+Voss K, Werdell J, Wernand M, Zibordi G. (2018): ESA Ocean Colour
+Climate Change Initiative (Ocean\_Colour\_cci): Version 3.1 Data. Centre
+for Environmental Data Analysis 04 July 2018.
+<doi:10.5285/9c334fbe6d424a708cf3c4cf0c6a53f5>.
 <http://dx.doi.org/10.5285/9c334fbe6d424a708cf3c4cf0c6a53f5>
 
 Stawitz C (2023): nmfspalette: A Color Palette for NOAA Fisheries. R

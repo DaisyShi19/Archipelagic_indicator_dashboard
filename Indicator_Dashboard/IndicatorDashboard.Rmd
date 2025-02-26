@@ -66,7 +66,7 @@ indicator_list <- c('Atmospheric Carbon Dioxide' = 'CO2',
                     'Rainfall' = 'Rainfall')
 
 #set include/exclude lists
-include_anom_list <- c("SST", "CO2", "Chl", "Rainall") #indicators that have an anomaly plot
+include_anom_list <- c("SST", "CO2", "Chl", "Rainfall") #indicators that have an anomaly plot
 include_anom_map_list <- c("SST", "Chl") #indicators that have an anomaly map
 report_year <- 2023 #current report year
 
@@ -424,7 +424,7 @@ output$season_desc <- renderUI(
   } else if (input$indicator == "Chl") {
     markdown("The seasonal cycle plot shows ocean color over time by month.  The horizontal black lines are the time series average for each month.  This figure shows the annual ocean color cycle (greatest in February, least in August).")     
   } else if (input$indicator == "Rainfall") {
-    markdown("The seasonal cycle plot shows rainfall over time by month.  The horizontal black lines are the time series average for each month.  This figure shows the annual cycle for rainfall (highest in March, lowest in June). ")    
+    markdown("The seasonal cycle plot shows rainfall over time by month.  The horizontal black lines are the time series average for each month.  This figure shows the annual cycle for rainfall (highest in December, lowest in June). ")    
   }
 )
 

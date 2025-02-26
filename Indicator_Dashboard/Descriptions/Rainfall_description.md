@@ -13,7 +13,7 @@ record (0.241–7.53 mm day<sup>-1</sup>). Over the period of record,
 there has been weakly significant decline of 2.95^{-4} mm
 day<sup>-1</sup> yr<sup>-1</sup> in rainfall. Over the time series,
 rainfall has declined by 0.013 mm day<sup>-1</sup>. The monthly anomaly
-has declined by 0.019 mm day<sup>-1</sup>. Average rainfall was below
+has declined by 0.019 mm day<sup>-1</sup>. Average rainfall was near
 average in the Main Hawaiian Islands domain.
 
 **Indicator Data**  
