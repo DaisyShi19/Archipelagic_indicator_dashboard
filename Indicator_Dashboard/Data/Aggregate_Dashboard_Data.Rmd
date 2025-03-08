@@ -26,7 +26,10 @@ RptYr <- 2023
 #| include: false
 # Load files
 all <- read_csv(here('Indicator_Dashboard', 'Data', paste('all_Dashboard_Data_', RptYr, '.csv', sep = "")))
-Global<- all[all$ID == c("CO2", "pH", "ENSO", "PDO"),]
+CO2<- all[all$ID == c("CO2"),]
+pH<- all[all$ID == c("pH"),]
+ENSO<- all[all$ID == c("ENSO"),]
+PDO<- all[all$ID == c("PDO"),]
 #CO2 <- read_csv(here('Indicator_Dashboard', 'Data', paste('CO2_Dashboard_Data_', RptYr, '.csv', sep = "")))
 #pH <- read_csv(here('Indicator_Dashboard', 'Data', paste('pH_Dashboard_Data_', RptYr, '.csv', sep = "")))
 #ENSO <- read_csv(here('Indicator_Dashboard', 'Data', paste('ENSO_Dashboard_Data_', RptYr, '.csv', sep = "")))
@@ -37,7 +40,10 @@ Chl <- read_csv(here('Indicator_Dashboard','Data', paste('chl_dashboard-MH_', Rp
 Rain <- read_csv(here('Indicator_Dashboard','Data', paste('rain_dashboard-MH_', RptYr, '.csv', sep = "")))
 
 # Aggregate files
-Dashboard_Data <- bind_rows(Global,
+Dashboard_Data <- bind_rows(CO2,
+                            pH,
+                            ENSO,
+                            PDO,
                             SST,
                             Chl,
                             Rain)
