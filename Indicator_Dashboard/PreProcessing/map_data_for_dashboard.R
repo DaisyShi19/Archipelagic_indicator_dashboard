@@ -47,9 +47,9 @@ prep_map_data <- function(indicator, raster_ann, raster_clim){ #, min_x, max_x, 
 }
 
 #read in raster data
-sst_2023 <- raster(here("Indicator_Dashboard/PreProcessing", "sst-MH-2023-mean.nc"))
+sst_2023 <- raster(here("Indicator_Dashboard/PreProcessing", "sst-MH-2024-mean.nc"))
 sst_clim <- raster(here("Indicator_Dashboard/PreProcessing", "sst-MH-1985-2009-mean.nc"))
-chl_2023 <- raster(here("Indicator_Dashboard/PreProcessing", "chl-MH-2023-mean.nc"))
+chl_2023 <- raster(here("Indicator_Dashboard/PreProcessing", "chl-MH-2024-mean.nc"))
 chl_clim <- raster(here("Indicator_Dashboard/PreProcessing", "chl-MH-1998-2009-mean.nc"))
 
 # get lat coordinates from raw data
@@ -86,7 +86,7 @@ plot(log(chl_out[[2]]))
 
 #combine data and write to file
 raster_df_all <- bind_rows(sst_out[[3]], chl_out[[3]])
-write.csv(raster_df_all, here("Indicator_Dashboard", "Data", "Dashboard_Map_Data_2023.csv"))
+write.csv(raster_df_all, here("Indicator_Dashboard", "Data", "Dashboard_Map_Data_2024.csv"))
 #write.csv(sst_out[[3]], here("Sea_Surface_Temperature", "SST_map_data_2023.csv"))
 #write.csv(chl_out[[3]], here("Ocean_Color", "Chl_map_data_2023.csv"))
 

@@ -19,13 +19,14 @@ library(here)
 ```{r}
 #| include: false
 # Set report year (RptYr), to make things easier
-RptYr <- 2023
+RptYr <- 2024
 ```
 
 ```{r}
 #| include: false
 # Load files
-all <- read_csv(here('Indicator_Dashboard', 'Data', paste('all_Dashboard_Data_', RptYr, '.csv', sep = "")))
+all <- read_csv(here('Indicator_Dashboard', 'Data', paste('all_Dashboard_Data_2023.csv', sep = "")))
+#all <- read_csv(here('Indicator_Dashboard', 'Data', paste('all_Dashboard_Data_', RptYr, '.csv', sep = "")))
 CO2<- all[all$ID == c("CO2"),]
 pH<- all[all$ID == c("pH"),]
 ENSO<- all[all$ID == c("ENSO"),]
