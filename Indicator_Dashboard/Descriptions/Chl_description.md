@@ -14,11 +14,11 @@ the previous years of the time series (0.057–0.12 mg chl
 m<sup>-3</sup>). Over the period of record, annual Chl-A has shown weak
 but significant linear decrease at a rate of 2.46^{-4} mg chl
 m<sup>-3</sup> yr<sup>-1</sup>, and chlorophyll anomalies have declined
-by 0.007 mg chl m<sup>-3</sup>. Chlorophyll concentrations were overall
-near average across the Main Hawaiian Islands.
+by 0.007 mg chl m<sup>-3</sup>. Chlorophyll concentrations were below
+average across the Main Hawaiian Islands.
 
 **Indicator Data**  
-Description: Chlorophyll-a concentration from 1998-2023, derived from
+Description: Chlorophyll-a concentration from 1998-2024, derived from
 the European Space Agency (ESA) Climate Change Initiative (CCI) dataset,
 v6.0 (Sathyendranath et al. 2018). A monthly climatology was generated
 across the entire period to provide an anomaly time series. An annual

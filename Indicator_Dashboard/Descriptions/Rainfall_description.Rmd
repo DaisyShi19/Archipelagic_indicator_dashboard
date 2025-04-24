@@ -78,7 +78,7 @@ __About the Indicator__
 Rainfall may have substantive effects on the nearshore environment and is a potentially important co-variate with the landings of particular stocks.
 
 __Status of the Indicator__  
-The rainfall over the Main Hawaiian Islands was `r signif(ann_mean_RptYr,3)` mm day^-^^1^ in `r RptYr`. Monthly rainfall ranged from `r signif(monthly_min_RptYr,3)`–`r signif(monthly_max_RptYr,3)` mm day^-^^1^ during the year, within the range of values observed over the period of record (`r signif(monthly_min_PrevYrs,3)`–`r signif(monthly_max_PrevYrs,3)`  mm day^-^^1^). Over the period of record, there has been weakly significant decline of `r abs(signif(trend, 3))` mm day^-^^1^ yr^-^^1^ in rainfall. Over the time series, rainfall has declined by `r abs(signif(delta_rain_lm,2))`  mm day^-^^1^. The monthly anomaly has declined by `r abs(signif(delta_rain_anom_lm,2))`  mm day^-^^1^. Average rainfall was near average in the Main Hawaiian Islands domain.
+The rainfall over the Main Hawaiian Islands was `r signif(ann_mean_RptYr,3)` mm day^-^^1^ in `r RptYr`. Monthly rainfall ranged from `r signif(monthly_min_RptYr,3)`–`r signif(monthly_max_RptYr,3)` mm day^-^^1^ during the year, within the range of values observed over the period of record (`r signif(monthly_min_PrevYrs,3)`–`r signif(monthly_max_PrevYrs,3)`  mm day^-^^1^). Overall rainfall was near average in the Main Hawaiian Islands domain.
 
 __Indicator Data__  
 Description: The CPC Merged Analysis of Precipitation (CMAP) is a technique which produces pentad and monthly analyses of global precipitation in which observations from rain gauges are merged with precipitation estimates from several satellite-based algorithms, such as infrared and microwave (NOAA 2002). The analyses are on a 2.5 x 2.5-degree latitude/longitude grid and extend back to 1979. CMAP Precipitation data are provided by the NOAA/OAR/ESRL PSD, Boulder, Colorado, USA, from their website at https://www.esrl.noaa.gov/psd/. The data are comparable (but should not be confused with) similarly combined analyses by the Global Precipitation Climatology Project described in Huffman et al. (1997).
@@ -93,10 +93,10 @@ Measurement Platform: In-situ station gauges and satellite data.
 
 Data available at: <http://apdrc.soest.hawaii.edu/erddap/griddap/hawaii_soest_bb7b_ce6a_f808.graph>.  
 
-Sourced from: NOAA ESRL (2024).
+Sourced from: NOAA ERSL (2024).
 
 __References__  
-NOAA ESRL (2024): <http://apdrc.soest.hawaii.edu/erddap/griddap/hawaii_soest_bb7b_ce6a_f808.graph> Accessed: 4 April 2024. 
+NOAA ERSL (2024): <http://apdrc.soest.hawaii.edu/erddap/griddap/hawaii_soest_bb7b_ce6a_f808.graph> Accessed: 4 April 2024. 
 
 Xie, P., and P.A. Arkin (1997): Global precipitation: A 17-year monthly analysis based on gauge observations, satellite estimates, and numerical model outputs. Bull. Amer. Meteor. Soc., 78, 2539 - 2558.<https://journals.ametsoc.org/view/journals/bams/78/11/1520-0477_1997_078_2539_gpayma_2_0_co_2.xml>
 
