@@ -19,7 +19,7 @@ library(markdown)
 ```{r}
 #| include: false
 # Set report year (RptYr), to make things easier
-RptYr <- 2023
+RptYr <- 2024
 
 # Identify the variable we're focused on
 var <- 'SST'
@@ -89,11 +89,11 @@ Region/Location: Main Hawaiian Island Grid (18.5° – 22.5°N, 161° – 154°W
 
 Measurement Platform: Satellite.
 
-Data available at: <https://oceanwatch.pifsc.noaa.gov/erddap/griddap/CRW_sst_v3_1_monthly>, <https://oceanwatch.pifsc.noaa.gov/erddap/griddap/CRW_sst_v3_1_1985-2009-clim>, and <https://oceanwatch.pifsc.noaa.gov/erddap/griddap/CRW_sst_v3_1_2023-clim>.   
+Data available at: <https://oceanwatch.pifsc.noaa.gov/erddap/griddap/CRW_sst_v3_1_monthly>, <https://oceanwatch.pifsc.noaa.gov/erddap/griddap/CRW_sst_v3_1_1985-2009-clim>, and <https://oceanwatch.pifsc.noaa.gov/erddap/griddap/CRW_sst_v3_1_2024-clim>.   
 
 Sourced from: NOAA OceanWatch (2024a). Graphics produced in part using Stawitz (2023).
 
 __References__  
-NOAA OceanWatch (2024a): <https://oceanwatch.pifsc.noaa.gov/erddap/griddap/CRW_sst_v3_1_monthly> Accessed: 3 April 2024.
+NOAA OceanWatch (2024a): <https://oceanwatch.pifsc.noaa.gov/erddap/griddap/CRW_sst_v3_1_monthly> Accessed: 31 March 2025.
 
 Stawitz C (2023): nmfspalette: A Color Palette for NOAA Fisheries. R package version 3.0.0.000. <https://nmfs-fish-tools.github.io/nmfspalette/>
