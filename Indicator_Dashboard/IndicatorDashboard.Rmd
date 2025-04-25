@@ -422,7 +422,7 @@ output$season_desc <- renderUI(
   } else if (input$indicator == "SST") {
     markdown("The seasonal cycle plot shows SST over time by month.  The horizontal black lines are the time series average for each month.  This figure shows both the annual SST cycle (coolest in March, warmest in September) and that SST is increasing over time in all months of the year.")
   } else if (input$indicator == "Chl") {
-    markdown("The seasonal cycle plot shows ocean color over time by month.  The horizontal black lines are the time series average for each month.  This figure shows the annual ocean color cycle (greatest in February, least in August).")     
+    markdown("The seasonal cycle plot shows ocean color over time by month.  The horizontal black lines are the time series average for each month.  This figure shows the annual ocean color cycle (greatest in December, least in May).")     
   } else if (input$indicator == "Rainfall") {
     markdown("The seasonal cycle plot shows rainfall over time by month.  The horizontal black lines are the time series average for each month.  This figure shows the annual cycle for rainfall (highest in December, lowest in June). ")    
   }
