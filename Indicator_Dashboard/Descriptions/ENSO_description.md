@@ -15,8 +15,8 @@ the ocean, marine ecosystems, and fisheries is an active area of
 research.
 
 **Status of the Indicator**  
-The Oceanic Niño Index (ONI) indicated a transition from La Niña to El
-Niño conditions in 2023. In 2023, the ONI ranged from -0.68 to 1.95.
+The Oceanic Niño Index (ONI) indicated a transition from El Niño to
+neutral conditions in 2024. In 2024, the ONI ranged from -0.53 to 1.78.
 This is within the range of values observed previously in the time
 series.
 

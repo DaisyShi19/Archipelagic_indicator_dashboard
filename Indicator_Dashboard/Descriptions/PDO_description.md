@@ -18,7 +18,7 @@ the ocean, marine ecosystems, and fisheries is an active area of
 research.
 
 **Status of the Indicator**  
-The PDO was negative in 2023. The index ranged from -2.47 to -0.949 over
+The PDO was negative in 2024. The index ranged from -3.04 to -1.07 over
 the course of the year. This is within the range of values observed
 previously in the time series.
 
