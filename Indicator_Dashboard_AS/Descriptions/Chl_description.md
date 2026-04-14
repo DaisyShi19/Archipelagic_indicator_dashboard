@@ -1,0 +1,69 @@
+## Ocean Color
+
+**About the Indicator**  
+Ocean color measures chlorophyll-a concentration near the ocean’s
+surface, which provides information on phytoplankton abundance.
+Chlorophyll-a is one of the most directly observable measures we have
+for tracking increasing ocean productivity.
+
+**Status of the Indicator**  
+Annual mean chlorophyll concentration was 0.055 mg chl m<sup>-3</sup> in
+2024. Monthly mean chlorophyll concentrations ranged from 0.049–0.06 mg
+chl m<sup>-3</sup>, which was within the range of values observed during
+the previous years of the time series (0.037–0.088 mg chl
+m<sup>-3</sup>). Chlorophyll concentrations were lower than average with
+an area of above average chlorophyll concentration near the main islands
+of Samoa.
+
+**Indicator Data**  
+Description: Chlorophyll-a concentration from 1998-2024, derived from
+the European Space Agency (ESA) Climate Change Initiative (CCI) dataset,
+v6.0 (Sathyendranath et al. 2018). A monthly climatology was generated
+across the entire period to provide an anomaly time series. An annual
+anomaly was generated in reference to the 1998-2009 climatology to
+provide a 2024 spatial anomaly.
+
+ESA Ocean Color Climate Change Initiative dataset is a merged dataset,
+combining data from SeaWIFS, MODIS-Aqua, MERIS, and VIIRS to provide a
+homogeneous time-series of ocean color. Data was accessed from the
+OceanWatch Central Pacific portal.
+
+Timeframe: Monthly
+
+Region/Location: American Samoa Grids (10° – 17.6°S, 172.5° – 164.9°W).
+
+Measurement Platform: Satellite
+
+Data available at:
+<https://oceanwatch.pifsc.noaa.gov/erddap/griddap/esa-cci-chla-monthly-v6-0>,
+<https://oceanwatch.pifsc.noaa.gov/erddap/griddap/esa-cci-chla-1998-2009-clim-v6-0>,
+and
+<https://oceanwatch.pifsc.noaa.gov/erddap/griddap/esa-cci-chla-2024-clim_v6-0>.
+
+Sourced from: NOAA OceanWatch (2024b) and Sathyendranath et al.(2018).
+Graphics produced in part using Stawitz (2023).
+
+**References**  
+NOAA OceanWatch (2024b):
+<https://oceanwatch.pifsc.noaa.gov/erddap/griddap/esa-cci-chla-monthly-v6-0>
+Accessed: 31 March 2025.
+
+Sathyendranath et al. (2018): Sathyendranath S, Grant M, Brewin R.J.W,
+Brockmann C, Brotas V, Chuprin A, Doerffer R, Dowell M, Farman A, Groom
+S, Jackson T, Krasemann H, Lavender S, Martinez Vicente V, Mazeran C,
+Mélin F, Moore TS, Müller D, Platt T, Regner P, Roy S, Steinmetz F,
+Swinton J, Valente A, Zühlke M, Antoine D, Arnone R, Balch W.M, Barker
+K, Barlow R, Bélanger S, Berthon J-F, Beşiktepe Ş, Brando VE, Canuti E,
+Chavez F, Claustre H, Crout R, Feldman G, Franz B, Frouin R, García-Soto
+C, Gibb SW, Gould R, Hooker S, Kahru M, Klein H, Kratzer S, Loisel H,
+McKee D, Mitchell BG, Moisan T, Muller-Karger F, O’Dowd L, Ondrusek M,
+Poulton AJ, Repecaud M, Smyth T, Sosik H.M, Taberner M, Twardowski M,
+Voss K, Werdell J, Wernand M, Zibordi G. (2018): ESA Ocean Colour
+Climate Change Initiative (Ocean\_Colour\_cci): Version 3.1 Data. Centre
+for Environmental Data Analysis 04 July 2018.
+<doi:10.5285/9c334fbe6d424a708cf3c4cf0c6a53f5>.
+<http://dx.doi.org/10.5285/9c334fbe6d424a708cf3c4cf0c6a53f5>
+
+Stawitz C (2023): nmfspalette: A Color Palette for NOAA Fisheries. R
+package version 3.0.0.000.
+<https://nmfs-fish-tools.github.io/nmfspalette/>
