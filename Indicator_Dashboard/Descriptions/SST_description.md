@@ -21,11 +21,11 @@ region.
 
 **Indicator Data**  
 Description: Satellite remotely sensed monthly sea surface temperature
-(SST) is averaged across the the Main Hawaiian Island Grid (18.5° –
-22.5°N, 161° – 154°W). A time series of monthly mean SST averaged over
-the Main Hawaiian Island region is presented. Additionally, spatial
-climatology and anomalies are shown. CoralTemp data are used to
-calculate this indicator.
+(SST) is averaged across the Main Hawaiian Island Grid (18.5° – 22.5°N,
+161° – 154°W). A time series of monthly mean SST averaged over the Main
+Hawaiian Island region is presented. Additionally, spatial climatology
+and anomalies are shown. CoralTemp data are used to calculate this
+indicator.
 
 Timeframe: Monthly.
 
