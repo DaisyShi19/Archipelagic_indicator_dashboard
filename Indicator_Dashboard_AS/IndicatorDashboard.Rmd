@@ -421,11 +421,11 @@ output$season_desc <- renderUI(
   } else if (input$indicator == "PDO") {
     markdown("The seasonal cycle plot show PDO values over time by month.  The horizontal black lines are the time series average for each month.  This figure shows that there is no long-term trend in PDO values.")
   } else if (input$indicator == "SST") {
-    markdown("The seasonal cycle plot shows SST over time by month.  The horizontal black lines are the time series average for each month.  This figure shows both the annual SST cycle (coolest in March, warmest in September) and that SST is increasing over time in all months of the year.")
+    markdown("The seasonal cycle plot shows SST over time by month.  The horizontal black lines are the time series average for each month.  This figure shows both the annual SST cycle (coolest in August, warmest in April) and that SST is increasing over time in all months of the year.")
   } else if (input$indicator == "Chl") {
-    markdown("The seasonal cycle plot shows ocean color over time by month.  The horizontal black lines are the time series average for each month.  This figure shows the annual ocean color cycle (greatest in February, least in August).")     
+    markdown("The seasonal cycle plot shows ocean color over time by month.  The horizontal black lines are the time series average for each month.  This figure shows the annual ocean color cycle (greatest in June, least in February).")     
   } else if (input$indicator == "Rainfall") {
-    markdown("The seasonal cycle plot shows rainfall over time by month.  The horizontal black lines are the time series average for each month.  This figure shows the annual cycle for rainfall (highest in December, lowest in June). ")    
+    markdown("The seasonal cycle plot shows rainfall over time by month.  The horizontal black lines are the time series average for each month.  This figure shows the annual cycle for rainfall (highest in February, lowest in August). ")    
   }
 )
 
@@ -530,10 +530,10 @@ output$map <- renderPlotly({
     
     #make base map
     p <- ggplot() + 
-      geom_rect(aes(xmin = ext$xmin, xmax = ext$xmax, ymin = -5, ymax = ext$ymax), #rectangle for coloring ocean #change ymin to fit AS domain
+      geom_rect(aes(xmin = ext$xmin, xmax = ext$xmax, ymin = -20, ymax = ext$ymax), #rectangle for coloring ocean #change ymin to fit AS domain
                 color = NA, fill = oceans[1])  +
-      geom_rect(aes(xmin = 19, xmax = 26, ymin = -17.6, ymax = -10.5), color = "black", fill = NA, linewidth = 0.5) + #AS box
-      annotate("text", x = 32.5, y = 24.5, label = "American Samoa Grid", size = 3.2, color = "black") +
+      geom_rect(aes(xmin = 180-172.5, xmax = 180-165, ymin = -17.6, ymax = -10.5), color = "black", fill = NA, linewidth = 0.5) + #AS box
+      annotate("text", x = 180-173, y = -10, label = "American Samoa Grid", size = 3.2, color = "black") +
       geom_vline(xintercept = c(0, 60), color="black", linewidth = 0.1) + #manually add graticules (hidden by ocean rectangle)
       geom_hline(yintercept = seq(0, 60, 10), color="black", linewidth = 0.1) +
       xlab("") + ylab("") +
