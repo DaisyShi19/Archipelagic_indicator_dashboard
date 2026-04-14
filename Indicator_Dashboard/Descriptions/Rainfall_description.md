@@ -6,10 +6,10 @@ is a potentially important co-variate with the landings of particular
 stocks.
 
 **Status of the Indicator**  
-The rainfall over the Main Hawaiian Islands was 1.72 mm day<sup>-1</sup>
-in 2023. Monthly rainfall ranged from 0.386–5.24 mm day<sup>-1</sup>
+The rainfall over the Main Hawaiian Islands was 1.26 mm day<sup>-1</sup>
+in 2024. Monthly rainfall ranged from 0.299–2.62 mm day<sup>-1</sup>
 during the year, within the range of values observed over the period of
-record (0.241–7.53 mm day<sup>-1</sup>). Overall rainfall was near
+record (0.242–7.53 mm day<sup>-1</sup>). Overall rainfall was below
 average in the Main Hawaiian Islands domain.
 
 **Indicator Data**  
@@ -52,15 +52,13 @@ Region: Main Hawaiian Island Grid (18.5° – 22.5°N, 161° – 154°W)
 
 Measurement Platform: In-situ station gauges and satellite data.
 
-Data available at:
-<http://apdrc.soest.hawaii.edu/erddap/griddap/hawaii_soest_bb7b_ce6a_f808.graph>.
+Data available at: <https://psl.noaa.gov/data/gridded/data.cmap.html>.
 
-Sourced from: NOAA ERSL (2024).
+Sourced from: NOAA PSL (2025).
 
 **References**  
-NOAA ERSL (2024):
-<http://apdrc.soest.hawaii.edu/erddap/griddap/hawaii_soest_bb7b_ce6a_f808.graph>
-Accessed: 4 April 2024.
+NOAA PSL (2025): <https://psl.noaa.gov/data/gridded/data.cmap.html>
+Accessed: 31 March 2025.
 
 Xie, P., and P.A. Arkin (1997): Global precipitation: A 17-year monthly
 analysis based on gauge observations, satellite estimates, and numerical

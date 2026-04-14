@@ -19,11 +19,12 @@ CO<sub>2</sub>.
 **Status of the Indicator**  
 Atmospheric CO<sub>2</sub> is increasing exponentially. This means that
 atmospheric CO<sub>2</sub> is increasing more quickly over time. In
-2023, the annual mean concentration of CO<sub>2</sub> was 421.08 ppm.
+2024, the annual mean concentration of CO<sub>2</sub> was 424.6 ppm.
 This is the highest annual value recorded. This year also saw the
-highest monthly value, which was 424 ppm. In 1959, the first year full
-of the time series, the atmospheric concentration of CO<sub>2</sub> was
-316 ppm. The annual mean passed 350 ppm in 1988, and 400 ppm in 2015.
+highest monthly value, which was 426.91 ppm. In 1959, the first year
+full of the time series, the atmospheric concentration of CO<sub>2</sub>
+was 316 ppm. The annual mean passed 350 ppm in 1988, and 400 ppm in
+2015.
 
 **Indicator Data**  
 Description: Monthly mean atmospheric carbon dioxide (CO<sub>2</sub>) at

@@ -10,13 +10,13 @@ which organisms are impacted and the time scales of these impacts is an
 area of active research.
 
 **Status of the Indicator**  
-Annual mean SST was 25.8 ºC in 2023. Over the period of record, SST has
+Annual mean SST was 25.7 ºC in 2024. Over the period of record, SST has
 increased by 0.6 ºC and the monthly SST anomaly increased by 0.6 ºC,
-both at a rate of roughly 0.0167 ºC yr<sup>-1</sup>. Monthly SST values
-in 2023 ranged from 24.6–26.9 ºC, within the range of temperatures
+both at a rate of roughly 0.016 ºC yr<sup>-1</sup>. Monthly SST values
+in 2024 ranged from 24.1–27.1 ºC, within the range of temperatures
 experienced over the past several decades (23.3–28.5 ºC). Overall, SST
 was hotter than the long-term average across most of the Main Hawaiian
-islands in 2023, with some intensification in the northeast part of the
+islands in 2024, with some intensification in the northeast part of the
 region.
 
 **Indicator Data**  
@@ -38,7 +38,7 @@ Data available at:
 <https://oceanwatch.pifsc.noaa.gov/erddap/griddap/CRW_sst_v3_1_monthly>,
 <https://oceanwatch.pifsc.noaa.gov/erddap/griddap/CRW_sst_v3_1_1985-2009-clim>,
 and
-<https://oceanwatch.pifsc.noaa.gov/erddap/griddap/CRW_sst_v3_1_2023-clim>.
+<https://oceanwatch.pifsc.noaa.gov/erddap/griddap/CRW_sst_v3_1_2024-clim>.
 
 Sourced from: NOAA OceanWatch (2024a). Graphics produced in part using
 Stawitz (2023).
@@ -46,7 +46,7 @@ Stawitz (2023).
 **References**  
 NOAA OceanWatch (2024a):
 <https://oceanwatch.pifsc.noaa.gov/erddap/griddap/CRW_sst_v3_1_monthly>
-Accessed: 3 April 2024.
+Accessed: 31 March 2025.
 
 Stawitz C (2023): nmfspalette: A Color Palette for NOAA Fisheries. R
 package version 3.0.0.000.

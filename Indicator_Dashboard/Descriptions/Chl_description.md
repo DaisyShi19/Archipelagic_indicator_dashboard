@@ -7,15 +7,15 @@ Chlorophyll-a is one of the most directly observable measures we have
 for tracking increasing ocean productivity.
 
 **Status of the Indicator**  
-Annual mean chlorophyll concentration was 0.079 mg chl m<sup>-3</sup> in
-2023. Monthly mean chlorophyll concentrations ranged from 0.068–0.1 mg
+Annual mean chlorophyll concentration was 0.078 mg chl m<sup>-3</sup> in
+2024. Monthly mean chlorophyll concentrations ranged from 0.066–0.092 mg
 chl m<sup>-3</sup>, which was within the range of values observed during
 the previous years of the time series (0.057–0.12 mg chl
 m<sup>-3</sup>). Over the period of record, annual Chl-A has shown weak
-but significant linear decrease at a rate of 2.46^{-4} mg chl
+but significant linear decrease at a rate of 2.25^{-4} mg chl
 m<sup>-3</sup> yr<sup>-1</sup>, and chlorophyll anomalies have declined
-by 0.007 mg chl m<sup>-3</sup>. Chlorophyll concentrations were below
-average across the Main Hawaiian Islands.
+by 0.007 mg chl m<sup>-3</sup>. Chlorophyll concentrations were near
+average across the Main Hawaiian Islands in 2024.
 
 **Indicator Data**  
 Description: Chlorophyll-a concentration from 1998-2024, derived from
@@ -23,7 +23,7 @@ the European Space Agency (ESA) Climate Change Initiative (CCI) dataset,
 v6.0 (Sathyendranath et al. 2018). A monthly climatology was generated
 across the entire period to provide an anomaly time series. An annual
 anomaly was generated in reference to the 1998-2009 climatology to
-provide a 2023 spatial anomaly.
+provide a 2024 spatial anomaly.
 
 ESA Ocean Color Climate Change Initiative dataset is a merged dataset,
 combining data from SeaWIFS, MODIS-Aqua, MERIS, and VIIRS to provide a
@@ -41,15 +41,15 @@ Data available at:
 <https://oceanwatch.pifsc.noaa.gov/erddap/griddap/esa-cci-chla-monthly-v6-0>,
 <https://oceanwatch.pifsc.noaa.gov/erddap/griddap/esa-cci-chla-1998-2009-clim-v6-0>,
 and
-<https://oceanwatch.pifsc.noaa.gov/erddap/griddap/esa-cci-chla-2023-clim_v6-0>.
+<https://oceanwatch.pifsc.noaa.gov/erddap/griddap/esa-cci-chla-2024-clim_v6-0>.
 
-Sourced from: NOAA OceanWatch (2024b) and Sathyendranath et al. (2018).
+Sourced from: NOAA OceanWatch (2024b) and Sathyendranath et al.(2018).
 Graphics produced in part using Stawitz (2023).
 
 **References**  
 NOAA OceanWatch (2024b):
 <https://oceanwatch.pifsc.noaa.gov/erddap/griddap/esa-cci-chla-monthly-v6-0>
-Accessed: 4 April 2024 & 3 May 2024.
+Accessed: 31 March 2025.
 
 Sathyendranath et al. (2018): Sathyendranath S, Grant M, Brewin R.J.W,
 Brockmann C, Brotas V, Chuprin A, Doerffer R, Dowell M, Farman A, Groom
