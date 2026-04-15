@@ -88,8 +88,8 @@ indicator_map_data <- read_csv(here('Data', paste0('Dashboard_Map_Data_', report
 #Access map base data
 land_proj <- readRDS(here('Data', 'rnatearth_AS_land.RData'))
 coast_proj <- readRDS(here('Data', 'rnatearth_AS_coast.RData'))
-land_proj_glb <- readRDS(here('Data', 'rnatearth_land.RData'))
-coast_proj_glb <- readRDS(here('Data', 'rnatearth_coast.RData'))
+land_proj_glb <- readRDS(here('Data', 'rnatearth_glb_land.RData'))
+coast_proj_glb <- readRDS(here('Data', 'rnatearth_glb_coast.RData'))
 land_proj_enso <- readRDS(here('Data', 'rnatearth_enso_land.RData'))
 coast_proj_enso <- readRDS(here('Data', 'rnatearth_enso_coast.RData'))
 
@@ -530,7 +530,7 @@ output$map <- renderPlotly({
     
     #make base map
     p <- ggplot() + 
-      geom_rect(aes(xmin = ext$xmin, xmax = ext$xmax, ymin = -20, ymax = ext$ymax), #rectangle for coloring ocean #change ymin to fit AS domain
+      geom_rect(aes(xmin = ext$xmin, xmax = ext$xmax, ymin = ext$ymin, ymax = ext$ymax), #rectangle for coloring ocean #change ymin to fit AS domain -20
                 color = NA, fill = oceans[1])  +
       geom_rect(aes(xmin = 7.5, xmax = 15, ymin = -17.6, ymax = -10.5), color = "black", fill = NA, linewidth = 0.5) + #AS box
       annotate("text", x = 7, y = -10, label = "American Samoa Grid", size = 3.2, color = "black") +
