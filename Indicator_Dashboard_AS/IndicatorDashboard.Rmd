@@ -532,8 +532,8 @@ output$map <- renderPlotly({
     p <- ggplot() + 
       geom_rect(aes(xmin = ext$xmin, xmax = ext$xmax, ymin = -20, ymax = ext$ymax), #rectangle for coloring ocean #change ymin to fit AS domain
                 color = NA, fill = oceans[1])  +
-      geom_rect(aes(xmin = 180-172.5, xmax = 180-165, ymin = -17.6, ymax = -10.5), color = "black", fill = NA, linewidth = 0.5) + #AS box
-      annotate("text", x = 180-173, y = -10, label = "American Samoa Grid", size = 3.2, color = "black") +
+      geom_rect(aes(xmin = 7.5, xmax = 15, ymin = -17.6, ymax = -10.5), color = "black", fill = NA, linewidth = 0.5) + #AS box
+      annotate("text", x = 7, y = -10, label = "American Samoa Grid", size = 3.2, color = "black") +
       geom_vline(xintercept = c(0, 60), color="black", linewidth = 0.1) + #manually add graticules (hidden by ocean rectangle)
       geom_hline(yintercept = seq(0, 60, 10), color="black", linewidth = 0.1) +
       xlab("") + ylab("") +
@@ -655,9 +655,9 @@ output$map_desc <- renderUI(
   } else if (input$indicator == "PDO") {
     markdown("The Pacific Decadal Index is measured across the North Pacific basin, north of 20°N.  The Main Hawaiian islands are also shown for reference.")
   } else if (input$indicator == "SST") {
-    markdown("This map shows the climatological average SST (1985-2021).  The data in the graphs above is averaged over the Main Hawaiian islands.")
+    markdown("This map shows the climatological average SST (1985-2009).  The data in the graphs above is averaged over the Main Hawaiian islands.")
   } else if (input$indicator == "Chl") {
-    markdown("This map shows the climatological average ocean color (1998-2021).  The data in the graphs above is averaged over the Main Hawaiian islands.")    
+    markdown("This map shows the climatological average ocean color (1998-2009).  The data in the graphs above is averaged over the Main Hawaiian islands.")    
   }
 )
 
@@ -733,9 +733,9 @@ output$anom_map_desc <- renderUI(
   
   #indicator-specific descriptions for seasonal plot
   if (input$indicator == "SST") {
-    markdown("This anomaly map shows the difference between SST in the report year (2023) and the long-term average (1985-2021).  Areas that were warmer in 2023 are red and areas that were cooler are blue.")
+    markdown("This anomaly map shows the difference between SST in the report year (2024) and the long-term average (1985-2009).  Areas that were warmer in 2023 are red and areas that were cooler are blue.")
   } else if (input$indicator == "Chl") {
-    markdown("This anomaly map shows the difference between ocean color in the report year (2023) and the long-term average (1998-2021).  Areas with greater chl concentration in 2023 are red and areas with lower chl concentrations are blue.")    
+    markdown("This anomaly map shows the difference between ocean color in the report year (2024) and the long-term average (1998-2009).  Areas with greater chl concentration in 2024 are red and areas with lower chl concentrations are blue.")    
   }  
   
 )
