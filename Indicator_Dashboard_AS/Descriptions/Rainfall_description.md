@@ -6,10 +6,10 @@ is a potentially important co-variate with the landings of particular
 stocks.
 
 **Status of the Indicator**  
-The rainfall over the Islands of American Samoa was 6.03 mm
-day<sup>-1</sup> in 2024. Monthly rainfall ranged from 2.64–14.5 mm
+The rainfall over the Islands of American Samoa was 1.26 mm
+day<sup>-1</sup> in 2024. Monthly rainfall ranged from 0.299–2.62 mm
 day<sup>-1</sup> during the year, within the range of values observed
-over the period of record (1.05–16.4 mm day<sup>-1</sup>). Overall
+over the period of record (0.242–7.53 mm day<sup>-1</sup>). Overall
 rainfall was below average in the American Samoa domain.
 
 **Indicator Data**  
@@ -19,24 +19,24 @@ precipitation in which observations from rain gauges are merged with
 precipitation estimates from several satellite-based algorithms, such as
 infrared and microwave (NOAA 2002). The analyses are on a 2.5 x
 2.5-degree latitude/longitude grid and extend back to 1979. CMAP
-Precipitation data are provided by the NOAA/OAR/ESRL PSD, Boulder,
-Colorado, USA, from their website at <https://www.esrl.noaa.gov/psd/>.
-The data are comparable (but should not be confused with) similarly
-combined analyses by the Global Precipitation Climatology Project
-described in Huffman et al. (1997). It is important to note that the
-input data sources to make these analyses are not constant throughout
-the period of record. For example, SSM/I (passive microwave - scattering
-and emission) data became available in July 1987; prior to that the only
-microwave-derived estimates available are from the MSU algorithm
-(Spencer, 1993) which is emission-based thus precipitation estimates are
-available only over oceanic areas. Furthermore, high temporal resolution
-IR data from geostationary satellites (every 3-hr) became available
-during 1986; prior to that, estimates from the OPI technique (Xie and
-Arkin 1997) are used based on OLR from orbiting satellites. The merging
-technique is thoroughly described in Xie and Arkin (1997). Briefly, the
-methodology is a two-step process. First, the random error is reduced by
-linearly combining the satellite estimates using the maximum likelihood
-method, in which case the linear combination coefficients are inversely
+Precipitation data are provided by the NOAA PSL, Boulder, Colorado, USA,
+from their website at <https://psl.noaa.gov>. The data are comparable
+(but should not be confused with) similarly combined analyses by the
+Global Precipitation Climatology Project described in Huffman et
+al. (1997). It is important to note that the input data sources to make
+these analyses are not constant throughout the period of record. For
+example, SSM/I (passive microwave - scattering and emission) data became
+available in July 1987; prior to that the only microwave-derived
+estimates available are from the MSU algorithm (Spencer, 1993) which is
+emission-based thus precipitation estimates are available only over
+oceanic areas. Furthermore, high temporal resolution IR data from
+geostationary satellites (every 3-hr) became available during 1986;
+prior to that, estimates from the OPI technique (Xie and Arkin 1997) are
+used based on OLR from orbiting satellites. The merging technique is
+thoroughly described in Xie and Arkin (1997). Briefly, the methodology
+is a two-step process. First, the random error is reduced by linearly
+combining the satellite estimates using the maximum likelihood method,
+in which case the linear combination coefficients are inversely
 proportional to the square of the local random error of the individual
 data sources. Over global land areas the random error is defined for
 each time period and grid location by comparing the data source with the
