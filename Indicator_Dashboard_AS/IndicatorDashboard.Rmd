@@ -596,7 +596,7 @@ output$map <- renderPlotly({
                          alpha = 0.5, linewidth = 0.5) +
         geom_sf(data = land_proj_enso, fill = "#A5A5A5", color = "#A5A5A5", linewidth = 0.5) +
         geom_sf(data = coast_proj_enso, color = "black", linewidth = 0.5) +
-        coord_sf(xlim = c(ext$xmin, ext$xmax), ylim = c(-5, ext$ymax), expand = F) +
+        coord_sf(xlim = c(ext$xmin, ext$xmax), ylim = c(ext$ymin, ext$ymax), expand = F) +
         annotate("text", x = 35, y = 7, label = "Niño 3.4 Region", size = 3.2, color = "black")
       
       #port to plotly
