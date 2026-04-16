@@ -10,12 +10,12 @@ which organisms are impacted and the time scales of these impacts is an
 area of active research.
 
 **Status of the Indicator**  
-Annual mean SST was 29.2 ºC in 2024. Over the period of record, SST has
-increased by 0.8 ºC and the monthly SST anomaly increased by 0.9 ºC,
-both at a rate of roughly 0.0209 ºC yr<sup>-1</sup>. Monthly SST values
-in 2024 ranged from 27.7–30.4 ºC, within the range of temperatures
-experienced over the past several decades (26.6–30 ºC). Overall, SST was
-hotter than the long-term average in 2024, with areas of stronger
+Annual mean SST was 25.7 ºC in 2024. Over the period of record, SST has
+increased by 0.6 ºC and the monthly SST anomaly increased by 0.6 ºC,
+both at a rate of roughly 0.016 ºC yr<sup>-1</sup>. Monthly SST values
+in 2024 ranged from 24.1–27.1 ºC, *outside* the range of temperatures
+experienced over the past several decades (23.3–28.5 ºC). Overall, SST
+was hotter than the long-term average in 2024, with areas of stronger
 warming in the northern part of the region.
 
 **Indicator Data**  
