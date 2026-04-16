@@ -10,7 +10,7 @@ The rainfall over the Islands of American Samoa was 1.26 mm
 day<sup>-1</sup> in 2024. Monthly rainfall ranged from 0.299–2.62 mm
 day<sup>-1</sup> during the year, within the range of values observed
 over the period of record (0.242–7.53 mm day<sup>-1</sup>). Overall
-rainfall was below average in the American Samoa domain.
+rainfall was near average in the American Samoa domain.
 
 **Indicator Data**  
 Description: The CPC Merged Analysis of Precipitation (CMAP) is a
