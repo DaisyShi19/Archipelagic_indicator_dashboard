@@ -7,13 +7,13 @@ Chlorophyll-a is one of the most directly observable measures we have
 for tracking increasing ocean productivity.
 
 **Status of the Indicator**  
-Annual mean chlorophyll concentration was 0.055 mg chl m<sup>-3</sup> in
-2024. Monthly mean chlorophyll concentrations ranged from 0.049–0.06 mg
+Annual mean chlorophyll concentration was 0.078 mg chl m<sup>-3</sup> in
+2024. Monthly mean chlorophyll concentrations ranged from 0.066–0.092 mg
 chl m<sup>-3</sup>, which was within the range of values observed during
-the previous years of the time series (0.037–0.088 mg chl
-m<sup>-3</sup>). Chlorophyll concentrations were lower than average with
-an area of above average chlorophyll concentration near the main islands
-of Samoa.
+the previous years of the time series (0.057–0.12 mg chl
+m<sup>-3</sup>). Chlorophyll concentrations were near average with an
+area of above average chlorophyll concentration near the main islands of
+Samoa.
 
 **Indicator Data**  
 Description: Chlorophyll-a concentration from 1998-2024, derived from
