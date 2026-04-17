@@ -655,9 +655,9 @@ output$map_desc <- renderUI(
   } else if (input$indicator == "PDO") {
     markdown("The Pacific Decadal Index is measured across the North Pacific basin, north of 20°N.  The Main Hawaiian islands are also shown for reference.")
   } else if (input$indicator == "SST") {
-    markdown("This map shows the climatological average SST (1985-2009).  The data in the graphs above is averaged over the Main Hawaiian islands.")
+    markdown("This map shows the climatological average SST (1985-2009).  The data in the graphs above is averaged over American Samoa.")
   } else if (input$indicator == "Chl") {
-    markdown("This map shows the climatological average ocean color (1998-2009).  The data in the graphs above is averaged over the Main Hawaiian islands.")    
+    markdown("This map shows the climatological average ocean color (1998-2009).  The data in the graphs above is averaged over American Samoa.")    
   }
 )
 
