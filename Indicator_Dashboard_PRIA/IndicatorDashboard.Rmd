@@ -421,11 +421,11 @@ output$season_desc <- renderUI(
   } else if (input$indicator == "PDO") {
     markdown("The seasonal cycle plot show PDO values over time by month.  The horizontal black lines are the time series average for each month.  This figure shows that there is no long-term trend in PDO values.")
   } else if (input$indicator == "SST") {
-    markdown("The seasonal cycle plot shows SST over time by month.  The horizontal black lines are the time series average for each month.  This figure shows both the annual SST cycle (coolest in March, warmest in September) and that SST is increasing over time in all months of the year.")
+    markdown("The seasonal cycle plot shows SST over time by month.  The horizontal black lines are the time series average for each month.  This figure shows both the annual SST cycle (coolest in February, warmest in July) and that SST is increasing over time in all months of the year.")
   } else if (input$indicator == "Chl") {
-    markdown("The seasonal cycle plot shows ocean color over time by month.  The horizontal black lines are the time series average for each month.  This figure shows the annual ocean color cycle (greatest in February, least in August).")     
+    markdown("The seasonal cycle plot shows ocean color over time by month.  The horizontal black lines are the time series average for each month.  This figure shows the annual ocean color cycle (greatest in June, least in October).")     
   } else if (input$indicator == "Rainfall") {
-    markdown("The seasonal cycle plot shows rainfall over time by month.  The horizontal black lines are the time series average for each month.  This figure shows the annual cycle for rainfall (highest in December, lowest in June). ")    
+    markdown("The seasonal cycle plot shows rainfall over time by month.  The horizontal black lines are the time series average for each month.  This figure shows the annual cycle for rainfall (highest in April and May, lowest in September). ")    
   }
 )
 
@@ -546,7 +546,7 @@ output$map <- renderPlotly({
       p <- p +       
         geom_sf(data = land_proj_glb, fill = "#A5A5A5", color = "#A5A5A5", linewidth = 0.5) +
         geom_sf(data = coast_proj_glb, color = "black", linewidth = 0.5) +
-        coord_sf(xlim = c(ext$xmin, ext$xmax), ylim = c(ext$ymin, ext$ymax), expand = F) +
+        coord_sf(xlim = c(ext$xmin, ext$xmax), ylim = c(-5, ext$ymax), expand = F) +
         annotate(geom = "point", x = 24.4, y = 19.5, color = crustacean[2]) +
         annotate(geom = "text", x = 33.5+1, y = 19.5-1, color = "black", size = 3.2,
                  label = "Mauna Loa\nObservatory")
@@ -569,7 +569,7 @@ output$map <- renderPlotly({
       p <- p + 
         geom_sf(data = land_proj_glb, fill = "#A5A5A5", color = "#A5A5A5", linewidth = 0.5) +
         geom_sf(data = coast_proj_glb, color = "black", linewidth = 0.5) +
-        coord_sf(xlim = c(ext$xmin, ext$xmax), ylim = c(ext$ymin, ext$ymax), expand = F) +
+        coord_sf(xlim = c(ext$xmin, ext$xmax), ylim = c(-5, ext$ymax), expand = F) +
         annotate(geom = "point", x = 22.0, y = 22.75, color = crustacean[2]) +
         annotate(geom = "text", x = 16.0-3, y = 22.75-4, color = "black", size = 3.2,
                  label = "Station\nALOHA")
@@ -620,7 +620,7 @@ output$map <- renderPlotly({
                          alpha = 0.5, linewidth = 0.5) +
         geom_sf(data = land_proj_glb, fill = "#A5A5A5", color = "#A5A5A5", linewidth = 0.5) +
         geom_sf(data = coast_proj_glb, color = "black", linewidth = 0.5) +
-        coord_sf(xlim = c(ext$xmin, ext$xmax), ylim = c(ext$ymin, ext$ymax), expand = F) +
+        coord_sf(xlim = c(ext$xmin, ext$xmax), ylim = c(-5, ext$ymax), expand = F) +
         annotate("text", x = 160, y = 22, 
                  label = "PDO Region", size = 3.2, color = "black")
       
