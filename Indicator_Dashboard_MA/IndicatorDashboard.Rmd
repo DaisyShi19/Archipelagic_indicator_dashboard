@@ -421,11 +421,11 @@ output$season_desc <- renderUI(
   } else if (input$indicator == "PDO") {
     markdown("The seasonal cycle plot show PDO values over time by month.  The horizontal black lines are the time series average for each month.  This figure shows that there is no long-term trend in PDO values.")
   } else if (input$indicator == "SST") {
-    markdown("The seasonal cycle plot shows SST over time by month.  The horizontal black lines are the time series average for each month.  This figure shows both the annual SST cycle (coolest in March, warmest in September) and that SST is increasing over time in all months of the year.")
+    markdown("The seasonal cycle plot shows SST over time by month.  The horizontal black lines are the time series average for each month.  This figure shows both the annual SST cycle (coolest in February, warmest in July) and that SST is increasing over time in all months of the year.")
   } else if (input$indicator == "Chl") {
-    markdown("The seasonal cycle plot shows ocean color over time by month.  The horizontal black lines are the time series average for each month.  This figure shows the annual ocean color cycle (greatest in February, least in August).")     
+    markdown("The seasonal cycle plot shows ocean color over time by month.  The horizontal black lines are the time series average for each month.  This figure shows the annual ocean color cycle (greatest in January, least in April).")     
   } else if (input$indicator == "Rainfall") {
-    markdown("The seasonal cycle plot shows rainfall over time by month.  The horizontal black lines are the time series average for each month.  This figure shows the annual cycle for rainfall (highest in December, lowest in June). ")    
+    markdown("The seasonal cycle plot shows rainfall over time by month.  The horizontal black lines are the time series average for each month.  This figure shows the annual cycle for rainfall (highest in August, lowest in March). ")    
   }
 )
 
@@ -655,9 +655,9 @@ output$map_desc <- renderUI(
   } else if (input$indicator == "PDO") {
     markdown("The Pacific Decadal Index is measured across the North Pacific basin, north of 20°N.  The Main Hawaiian islands are also shown for reference.")
   } else if (input$indicator == "SST") {
-    markdown("This map shows the climatological average SST (1985-2021).  The data in the graphs above is averaged over the Main Hawaiian islands.")
+    markdown("This map shows the climatological average SST (1985-2021).  The data in the graphs above is averaged over the Marianas archipelago.")
   } else if (input$indicator == "Chl") {
-    markdown("This map shows the climatological average ocean color (1998-2021).  The data in the graphs above is averaged over the Main Hawaiian islands.")    
+    markdown("This map shows the climatological average ocean color (1998-2021).  The data in the graphs above is averaged over the Marianas archipelago.")    
   }
 )
 
@@ -733,9 +733,9 @@ output$anom_map_desc <- renderUI(
   
   #indicator-specific descriptions for seasonal plot
   if (input$indicator == "SST") {
-    markdown("This anomaly map shows the difference between SST in the report year (2023) and the long-term average (1985-2021).  Areas that were warmer in 2023 are red and areas that were cooler are blue.")
+    markdown("This anomaly map shows the difference between SST in the report year (2024) and the long-term average (1985-2009).  Areas that were warmer in 2024 are red and areas that were cooler are blue.")
   } else if (input$indicator == "Chl") {
-    markdown("This anomaly map shows the difference between ocean color in the report year (2023) and the long-term average (1998-2021).  Areas with greater chl concentration in 2023 are red and areas with lower chl concentrations are blue.")    
+    markdown("This anomaly map shows the difference between ocean color in the report year (2024) and the long-term average (1998-2009).  Areas with greater chl concentration in 2024 are red and areas with lower chl concentrations are blue.")    
   }  
   
 )
