@@ -17,8 +17,8 @@ resource_files:
   - "Data/Dashboard_Map_Data_2024.csv"
   - "Data/rnatearth_coast.RData"
   - "Data/rnatearth_land.RData"
-  - "Data/rnatearth_Marianas_coast.RData"
-  - "Data/rnatearth_Marianas_land.RData"
+  - "Data/rnatearth_Mariana_coast.RData"
+  - "Data/rnatearth_Mariana_land.RData"
   - "Images/Indicator-Table-2024-Monthly-Variables.png"
   - "Images/CO2-Indicator-Table-2024-Monthly-Variables.png"
   - "Images/Chl-Indicator-Table-2024-Monthly-Variables.png"
@@ -86,8 +86,8 @@ indicator_data <- read_csv(here('Data', paste0('Dashboard_Data_', report_year, '
 indicator_map_data <- read_csv(here('Data', paste0('Dashboard_Map_Data_', report_year, '.csv')))
 
 #Access map base data
-land_proj <- readRDS(here('Data', 'rnatearth_Marianas_land.RData'))
-coast_proj <- readRDS(here('Data', 'rnatearth_Marianas_coast.RData'))
+land_proj <- readRDS(here('Data', 'rnatearth_Mariana_land.RData'))
+coast_proj <- readRDS(here('Data', 'rnatearth_Mariana_coast.RData'))
 land_proj_glb <- readRDS(here('Data', 'rnatearth_land.RData'))
 coast_proj_glb <- readRDS(here('Data', 'rnatearth_coast.RData'))
 land_proj_enso <- readRDS(here('Data', 'rnatearth_enso_land.RData'))
