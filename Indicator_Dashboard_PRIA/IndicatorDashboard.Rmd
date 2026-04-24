@@ -533,7 +533,7 @@ output$map <- renderPlotly({
       geom_rect(aes(xmin = 120, xmax = 260, ymin = -5, ymax =  55.2035), #rectangle for coloring ocean 
                 color = NA, fill = oceans[1])  +
       geom_rect(aes(xmin = 3+180, xmax = 22+180, ymin = -1, ymax = 7), color = "black", fill = NA, linewidth = 0.5) + #AS box
-      annotate("text", x = 5+180, y = 8, label = "PRIA Grid", size = 3.2, color = "black") +
+      annotate("text", x = 5+180, y = 8.2, label = "PRIA Grid", size = 3.2, color = "black") +
       geom_vline(xintercept = c(0+180, 60+180), color="black", linewidth = 0.1) + #manually add graticules (hidden by ocean rectangle)
       geom_hline(yintercept = seq(0, 60, 10), color="black", linewidth = 0.1) +
       xlab("") + ylab("") +
@@ -598,7 +598,7 @@ output$map <- renderPlotly({
         geom_rect(aes(xmin = 60+180, xmax = 10+180, ymin = -5, ymax = 5), 
                          color = crustacean[3], fill = crustacean[2], 
                          alpha = 0.5, linewidth = 0.5) +
-        geom_sf(data = land_proj_enso, fill = "#A5A5A5", color = "#A5A5A5", linewidth = 0.5) +
+        geom_sf(data = land_proj_glb, fill = "#A5A5A5", color = "#A5A5A5", linewidth = 0.5) +
         geom_rect(aes(xmin = ext$xmin, xmax =120, ymin = ext$ymin, ymax =  ext$ymax),  color = NA, fill = "white")  +
         geom_rect(aes(xmin = 260, xmax =ext$xmax,  ymin = ext$ymin, ymax =  ext$ymax),  color = NA, fill = "white")  +
         #geom_sf(data = coast_proj_glb, color = "black", linewidth = 0.5) +

@@ -533,7 +533,7 @@ output$map <- renderPlotly({
       geom_rect(aes(xmin = 120, xmax = 260, ymin = -20.0745, ymax =  55.2035), #rectangle for coloring ocean #change ymin to fit AS domain -25
                 color = NA, fill = oceans[1])  +
       geom_rect(aes(xmin = 7.5+180, xmax = 15+180, ymin = -17.6, ymax = -10.5), color = "black", fill = NA, linewidth = 0.5) + #AS box
-      annotate("text", x = 7+180, y = -9.5, label = "American Samoa Grid", size = 3.2, color = "black") +
+      annotate("text", x = 7+180, y = -9.3, label = "American Samoa Grid", size = 3.2, color = "black") +
       geom_vline(xintercept = c(0+180, 60+180), color="black", linewidth = 0.1) + #manually add graticules (hidden by ocean rectangle)
       geom_hline(yintercept = seq(-20, 60, 10), color="black", linewidth = 0.1) +
       xlab("") + ylab("") +
