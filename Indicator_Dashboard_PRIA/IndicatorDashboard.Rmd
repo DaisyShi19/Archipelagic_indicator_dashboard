@@ -546,7 +546,7 @@ output$map <- renderPlotly({
       p <- p +       
         geom_sf(data = land_proj_glb, fill = "#A5A5A5", color = "#A5A5A5", linewidth = 0.5) +
         geom_rect(aes(xmin = ext$xmin, xmax =120, ymin = ext$ymin, ymax =  ext$ymax),  color = NA, fill = "white")  +
-        geom_rect(aes(xmin = 260, xmax =ext$xmax,  ymin = ext$ymin, ymax =  ext$ymax),  color = NA, fill = "white")  +
+        geom_rect(aes(xmin = 260, xmax =ext$xmax+8,  ymin = ext$ymin, ymax =  ext$ymax),  color = NA, fill = "white")  +
         #geom_sf(data = coast_proj_glb, color = "black", linewidth = 0.5) +
         coord_sf(xlim = c(120, 260), ylim = c(-5, 55.2035), expand = F) +
         annotate(geom = "point", x = 24.4+180, y = 19.5, color = crustacean[2]) +
@@ -571,7 +571,7 @@ output$map <- renderPlotly({
       p <- p + 
         geom_sf(data = land_proj_glb, fill = "#A5A5A5", color = "#A5A5A5", linewidth = 0.5) +
         geom_rect(aes(xmin = ext$xmin, xmax =120, ymin = ext$ymin, ymax =  ext$ymax),  color = NA, fill = "white")  +
-        geom_rect(aes(xmin = 260, xmax =ext$xmax,  ymin = ext$ymin, ymax =  ext$ymax),  color = NA, fill = "white")  +
+        geom_rect(aes(xmin = 260, xmax =ext$xmax+8,  ymin = ext$ymin, ymax =  ext$ymax),  color = NA, fill = "white")  +
         #geom_sf(data = coast_proj_glb, color = "black", linewidth = 0.5) +
         coord_sf(xlim = c(120, 260), ylim = c(-5, 55.2035), expand = F) +
         annotate(geom = "point", x = 22.0+180, y = 22.75, color = crustacean[2]) +
@@ -600,7 +600,7 @@ output$map <- renderPlotly({
                          alpha = 0.5, linewidth = 0.5) +
         geom_sf(data = land_proj_glb, fill = "#A5A5A5", color = "#A5A5A5", linewidth = 0.5) +
         geom_rect(aes(xmin = ext$xmin, xmax =120, ymin = ext$ymin, ymax =  ext$ymax),  color = NA, fill = "white")  +
-        geom_rect(aes(xmin = 260, xmax =ext$xmax,  ymin = ext$ymin, ymax =  ext$ymax),  color = NA, fill = "white")  +
+        geom_rect(aes(xmin = 260, xmax =ext$xmax+8,  ymin = ext$ymin, ymax =  ext$ymax),  color = NA, fill = "white")  +
         #geom_sf(data = coast_proj_glb, color = "black", linewidth = 0.5) +
         coord_sf(xlim = c(120, 260), ylim = c(-5, 55.2035), expand = F) +
         annotate("text", x = 35+180, y = 7, label = "Niño 3.4 Region", size = 3.2, color = "black")
@@ -626,7 +626,7 @@ output$map <- renderPlotly({
                          alpha = 0.5, linewidth = 0.5) +
         geom_sf(data = land_proj_glb, fill = "#A5A5A5", color = "#A5A5A5", linewidth = 0.5) +
         geom_rect(aes(xmin = ext$xmin, xmax =120, ymin = ext$ymin, ymax =  ext$ymax),  color = NA, fill = "white")  +
-        geom_rect(aes(xmin = 260, xmax =ext$xmax,  ymin = ext$ymin, ymax =  ext$ymax),  color = NA, fill = "white")  +
+        geom_rect(aes(xmin = 260, xmax =ext$xmax+8,  ymin = ext$ymin, ymax =  ext$ymax),  color = NA, fill = "white")  +
         #geom_sf(data = coast_proj_glb, color = "black", linewidth = 0.5) +
         coord_sf(xlim = c(120, 260), ylim = c(-5, 55.2035), expand = F) +
         annotate("text", x = 160+180, y = 22, 
