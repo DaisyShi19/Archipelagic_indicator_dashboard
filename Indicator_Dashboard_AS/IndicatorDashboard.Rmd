@@ -585,7 +585,10 @@ output$map <- renderPlotly({
         style(hoverinfo = "skip", traces = c(1:8, 10))
     
       #customize tooltip
-      g$x$data[[9]]$text <- "158.0W, 22.75N<br />Station ALOHA"
+      
+      #g$x$data[[9]]$text <- "158.0W, 22.75N<br />Station ALOHA"
+      x_mod = x-30
+      g$x_mod$data[[9]]$text <- "158.0W, 22.75N<br />Station ALOHA"
       
       #return plot
       g
