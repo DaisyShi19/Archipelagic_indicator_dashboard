@@ -511,9 +511,8 @@ output$map <- renderPlotly({
       coord_sf(expand = F) + #don't expand past x/y limits
       xlab("") + ylab("") + 
       theme_bw() + theme(panel.grid = element_line(color="black", linewidth = 0.1),
-                         legend.background = element_rect(fill='transparent'))
-
- 
+                         legend.background = element_rect(fill='transparent'))+
+      theme(axis.text.x = element_text(angle = 90, vjust = 0.5, hjust = 1))
      
      
     #next port to plotly
