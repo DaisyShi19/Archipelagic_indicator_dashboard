@@ -511,7 +511,9 @@ output$map <- renderPlotly({
       coord_sf(expand = F) + #don't expand past x/y limits
       xlab("") + ylab("") + 
       theme_bw() + theme(panel.grid = element_line(color="black", linewidth = 0.1),
-                         legend.background = element_rect(fill='transparent'))
+                         legend.background = element_rect(fill='transparent'))+
+      theme(axis.text.x = element_text(angle = 45, vjust = 0.5, hjust = 1))
+
 
  
      
@@ -586,9 +588,7 @@ output$map <- renderPlotly({
     
       #customize tooltip
       
-      #g$x$data[[9]]$text <- "158.0W, 22.75N<br />Station ALOHA"
-      x_mod = x-30
-      g$x_mod$data[[9]]$text <- "158.0W, 22.75N<br />Station ALOHA"
+      g$x$data[[9]]$text <- "158.0W, 22.75N<br />Station ALOHA"
       
       #return plot
       g
@@ -710,7 +710,8 @@ output$anom_map <- renderPlotly({
     coord_sf(expand = F) +
     xlab("") + ylab("") +
     theme_bw() + theme(panel.grid = element_line(color="black", linewidth = 0.1),
-                       legend.background = element_rect(fill='transparent'))
+                       legend.background = element_rect(fill='transparent'))+
+    theme(axis.text.x = element_text(angle = 45, vjust = 0.5, hjust = 1))
   
   #next, port to plotly
   g_anom <- ggplotly(p_anom, tooltip = c("labels"), height = plot_height) |>
