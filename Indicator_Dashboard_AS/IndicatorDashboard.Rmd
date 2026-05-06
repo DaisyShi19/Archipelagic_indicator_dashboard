@@ -745,7 +745,7 @@ output$anom_map_desc <- renderUI(
   
   #indicator-specific descriptions for seasonal plot
   if (input$indicator == "SST") {
-    markdown("This anomaly map shows the difference between SST in the report year (2024) and the long-term average (1985-2009).  Areas that were warmer in 2023 are red and areas that were cooler are blue.")
+    markdown("This anomaly map shows the difference between SST in the report year (2024) and the long-term average (1985-2009).  Areas that were warmer in 2024 are red and areas that were cooler are blue.")
   } else if (input$indicator == "Chl") {
     markdown("This anomaly map shows the difference between ocean color in the report year (2024) and the long-term average (1998-2009).  Areas with greater chl concentration in 2024 are red and areas with lower chl concentrations are blue.")    
   }  
