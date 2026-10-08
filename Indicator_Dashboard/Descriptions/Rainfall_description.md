@@ -6,8 +6,8 @@ is a potentially important co-variate with the landings of particular
 stocks.
 
 **Status of the Indicator**  
-The rainfall over the Main Hawaiian Islands was 1.26 mm day<sup>-1</sup>
-in 2024. Monthly rainfall ranged from 0.299–2.62 mm day<sup>-1</sup>
+The rainfall over the Main Hawaiian Islands was 1.33 mm day<sup>-1</sup>
+in 2025. Monthly rainfall ranged from 0.512–2.79 mm day<sup>-1</sup>
 during the year, within the range of values observed over the period of
 record (0.242–7.53 mm day<sup>-1</sup>). Overall rainfall was below
 average in the Main Hawaiian Islands domain.

@@ -7,15 +7,15 @@ Chlorophyll-a is one of the most directly observable measures we have
 for tracking increasing ocean productivity.
 
 **Status of the Indicator**  
-Annual mean chlorophyll concentration was 0.078 mg chl m<sup>-3</sup> in
-2024. Monthly mean chlorophyll concentrations ranged from 0.066–0.092 mg
+Annual mean chlorophyll concentration was 0.077 mg chl m<sup>-3</sup> in
+2025. Monthly mean chlorophyll concentrations ranged from 0.064–0.096 mg
 chl m<sup>-3</sup>, which was within the range of values observed during
 the previous years of the time series (0.057–0.12 mg chl
 m<sup>-3</sup>). Over the period of record, annual Chl-A has shown weak
-but significant linear decrease at a rate of 2.25^{-4} mg chl
+but significant linear decrease at a rate of 2.16^{-4} mg chl
 m<sup>-3</sup> yr<sup>-1</sup>, and chlorophyll anomalies have declined
-by 0.007 mg chl m<sup>-3</sup>. Chlorophyll concentrations were near
-average across the Main Hawaiian Islands in 2024.
+by 0.006 mg chl m<sup>-3</sup>. Chlorophyll concentrations were near
+average across the Main Hawaiian Islands in 2025.
 
 **Indicator Data**  
 Description: Chlorophyll-a concentration from 1998-2024, derived from
