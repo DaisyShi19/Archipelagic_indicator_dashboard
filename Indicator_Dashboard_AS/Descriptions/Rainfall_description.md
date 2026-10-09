@@ -6,10 +6,10 @@ is a potentially important co-variate with the landings of particular
 stocks.
 
 **Status of the Indicator**  
-The rainfall over the Islands of American Samoa was 1.26 mm
-day<sup>-1</sup> in 2024. Monthly rainfall ranged from 0.299–2.62 mm
+The rainfall over the Islands of American Samoa was 6.48 mm
+day<sup>-1</sup> in 2025. Monthly rainfall ranged from 1.56–11.5 mm
 day<sup>-1</sup> during the year, within the range of values observed
-over the period of record (0.242–7.53 mm day<sup>-1</sup>). Overall
+over the period of record (1.05–16.4 mm day<sup>-1</sup>). Overall
 rainfall was near average in the American Samoa domain.
 
 **Indicator Data**  
