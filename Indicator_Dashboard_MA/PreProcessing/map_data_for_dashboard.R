@@ -35,7 +35,7 @@ prep_map_data <- function(indicator, raster_ann, raster_clim){ #, min_x, max_x, 
                            "<br>", indicator,
                            " Anomaly: ", signif(layer, 3))) %>%
     mutate(ID = paste0(indicator, "_anom"))
-  
+  #modified for MA domain
   raster_df['x'] <-   raster_df['x_disp']  #raster_df['x_disp'] -180  
   raster_anom_df['x'] <-  raster_df['x_disp'] #raster_anom_df['x_disp'] -180  
   #combine datasets

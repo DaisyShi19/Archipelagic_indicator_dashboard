@@ -7,15 +7,15 @@ Chlorophyll-a is one of the most directly observable measures we have
 for tracking increasing ocean productivity.
 
 **Status of the Indicator**  
-Annual mean chlorophyll concentration was 0.05 mg chl m<sup>-3</sup> in
-2024. Monthly mean chlorophyll concentrations ranged from 0.046–0.055 mg
+Annual mean chlorophyll concentration was 0.049 mg chl m<sup>-3</sup> in
+2025. Monthly mean chlorophyll concentrations ranged from 0.045–0.057 mg
 chl m<sup>-3</sup>, which was within the range of values observed during
 the previous years of the time series (0.043–0.095 mg chl
 m<sup>-3</sup>). Over the period of record, annual Chl-A has shown weak
-but significant linear decrease at a rate of 3.68^{-4} mg chl
+but significant linear decrease at a rate of 3.61^{-4} mg chl
 m<sup>-3</sup> yr<sup>-1</sup>, and chlorophyll anomalies have declined
 by 0.01 mg chl m<sup>-3</sup>. Chlorophyll concentrations were below
-average across the Marianas archipelago in 2024.
+average across the Marianas archipelago in 2025.
 
 **Indicator Data**  
 Description: Chlorophyll-a concentration from 1998-2024, derived from

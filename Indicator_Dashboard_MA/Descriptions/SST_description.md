@@ -10,14 +10,13 @@ which organisms are impacted and the time scales of these impacts is an
 area of active research.
 
 **Status of the Indicator**  
-Annual mean SST was 28.8 ºC in 2024. Over the period of record, SST has
-increased by 1 ºC and the monthly SST anomaly increased by 0.9 ºC, both
-at a rate of roughly 0.0239 ºC yr<sup>-1</sup>. Monthly SST values in
-2024 ranged from 26.9–30.1 ºC, within the range of temperatures
-experienced over the past several decades (25.6–30.6 ºC). Overall, SST
-was hotter than the long-term average across the Marianas archipelago in
-2024, with some intensification in the southern part of the island
-chain.
+Annual mean SST was 29.1 ºC in 2025. Over the period of record, SST has
+increased by 1 ºC and the monthly SST anomaly increased by 1 ºC, both at
+a rate of roughly 0.0246 ºC yr<sup>-1</sup>. Monthly SST values in 2025
+ranged from 27.7–29.9 ºC, within the range of temperatures experienced
+over the past several decades (25.6–30.6 ºC). Overall, SST was hotter
+than the long-term average across the Marianas archipelago in 2025, with
+intensification to the north of the islands.
 
 **Indicator Data**  
 Description: Satellite remotely sensed monthly sea surface temperature
