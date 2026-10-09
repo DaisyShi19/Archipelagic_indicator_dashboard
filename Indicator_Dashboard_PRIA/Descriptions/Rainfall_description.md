@@ -6,14 +6,14 @@ is a potentially important co-variate with the landings of particular
 stocks.
 
 **Status of the Indicator**  
-The rainfall over the Pacific Remote Island Area (PRIA) was 4.59 mm
-day<sup>-1</sup> in 2024. Monthly rainfall ranged from 2.96–6.99 mm
+The rainfall over the Pacific Remote Island Area (PRIA) was 3.1 mm
+day<sup>-1</sup> in 2025. Monthly rainfall ranged from 0.847–6.33 mm
 day<sup>-1</sup> during the year, within the range of values observed
 over the period of record (0.806–18.9 mm day<sup>-1</sup>). Over the
 period of record, annual rainfall has shown weak but significant linear
-decrease at a rate of 0.0251 mm day<sup>-1</sup> yr<sup>-1</sup>, and
+decrease at a rate of 0.0288 mm day<sup>-1</sup> yr<sup>-1</sup>, and
 rainfall anomalies have declined by 1 mm day<sup>-1</sup>. Overall
-rainfall was near average in 2024.
+rainfall was below average in 2025.
 
 **Indicator Data**  
 Description: The CPC Merged Analysis of Precipitation (CMAP) is a
