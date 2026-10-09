@@ -10,13 +10,13 @@ which organisms are impacted and the time scales of these impacts is an
 area of active research.
 
 **Status of the Indicator**  
-Annual mean SST was 28.7 ºC in 2024. Over the period of record, SST has
-increased by 0.3 ºC and the monthly SST anomaly increased by 0.3 ºC,
-both at a rate of roughly 0.00751 ºC yr<sup>-1</sup>. Monthly SST values
-in 2024 ranged from 27.5–29.4 ºC, within the range of temperatures
+Annual mean SST was 27.8 ºC in 2025. Over the period of record, SST has
+increased by 0.2 ºC and the monthly SST anomaly increased by 0.2 ºC,
+both at a rate of roughly 0.00591 ºC yr<sup>-1</sup>. Monthly SST values
+in 2025 ranged from 26.8–28.5 ºC, within the range of temperatures
 experienced over the past several decades (25.7–30.2 ºC). Overall, SST
-was hotter than the long-term average across most of the Pacific Remote
-Island Area (PRIA) in 2024.
+was cooler than the long-term average across most of the Pacific Remote
+Island Area (PRIA) in 2025.
 
 **Indicator Data**  
 Description: Satellite remotely sensed monthly sea surface temperature

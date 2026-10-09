@@ -18,9 +18,10 @@ the ocean, marine ecosystems, and fisheries is an active area of
 research.
 
 **Status of the Indicator**  
-The PDO was negative in 2024. The index ranged from -3.04 to -1.07 over
-the course of the year. This is within the range of values observed
-previously in the time series.
+The PDO was negative in 2025. The index ranged from -3.59 to -0.892 over
+the course of the year. This represents the strongest negative value in
+the time series, with the next two lowest values occurring in 2024 and
+1894.
 
 **Indicator Data**  
 Description: The PDO is often described as a long-lived El Niño-like
