@@ -6,11 +6,11 @@ is a potentially important co-variate with the landings of particular
 stocks.
 
 **Status of the Indicator**  
-The rainfall over the Marianas archipelago was 4.07 mm day<sup>-1</sup>
-in 2024. Monthly rainfall ranged from 0.423–13 mm day<sup>-1</sup>
+The rainfall over the Marianas archipelago was 4.43 mm day<sup>-1</sup>
+in 2025. Monthly rainfall ranged from 0.63–16.2 mm day<sup>-1</sup>
 during the year, within the range of values observed over the period of
 record (0.286–17.5 mm day<sup>-1</sup>). Overall rainfall was near
-average in 2024.
+average in 2025.
 
 **Indicator Data**  
 Description: The CPC Merged Analysis of Precipitation (CMAP) is a
